@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Categorie extends Model
 {
   protected $table = "categorie";
-  protected $fillable = array('intitule');
+  protected $fillable = ['intitule'];
 
   public function produit()
   {
