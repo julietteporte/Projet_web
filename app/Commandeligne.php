@@ -8,4 +8,14 @@ class Commandeligne extends Model
 {
   protected $table = "commandeligne";
   protected $fillable = array('quantiteproduit', 'prixunitaire');
+
+  public function commande()
+  {
+    return $this->belongsTo('App\Commande');
+  }
+
+  public function produit()
+  {
+    return $this->hasOne('App\Produit');
+  }
 }

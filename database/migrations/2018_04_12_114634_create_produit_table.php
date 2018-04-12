@@ -19,8 +19,8 @@ class CreateProduitTable extends Migration {
 			$table->string('Legende', 100)->nullable();
 			$table->text('Description', 65535)->nullable();
 			$table->decimal('Prix', 15, 3)->nullable();
+			$table->enum('Disponibilite', array('En stock','En cours de reapprovisionnement','Non disponible'))->default('En stock');
 			$table->boolean('Active')->default(0);
-			$table->integer('ID_Disponibilite')->index('FK_Produit_ID_Disponibilite');
 			$table->integer('ID_Categorie')->index('FK_Produit_ID_Categorie');
 		});
 	}

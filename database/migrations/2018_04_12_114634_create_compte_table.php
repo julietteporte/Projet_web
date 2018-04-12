@@ -16,8 +16,8 @@ class CreateCompteTable extends Migration {
 		{
 			$table->integer('ID', true);
 			$table->string('AdresseMail', 50)->nullable();
-			$table->string('MotDePasse', 15)->nullable();
-			$table->string('MotDePasseFacebook', 30)->nullable();
+			$table->string('MotDePasse', 50)->nullable();
+			$table->string('MotDePasseFacebook', 50)->nullable();
 			$table->string('Nom', 25)->nullable();
 			$table->string('Prenom', 25)->nullable();
 			$table->date('DateInscription');
