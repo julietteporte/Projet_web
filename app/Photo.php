@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Photo extends Model
 {
   protected $table = "photo";
-  protected $fillable = array('intitule', 'description', 'fichier', 'active');
+  protected $fillable = ['intitule', 'description', 'fichier', 'active',];
 
   public function manifestation()
   {
@@ -23,7 +23,7 @@ class Photo extends Model
   {
     return $this->hasOne('App\Compte');
   }
-  
+
   public function liker()
   {
     return $this->belongsToMany('App\Compte');

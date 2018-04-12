@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Typevote extends Model
 {
   protected $table = "typevote";
-  protected $fillable = array('type');
+  protected $fillable = ['type'];
 
   public function vote()
   {
