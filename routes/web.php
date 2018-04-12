@@ -19,3 +19,7 @@ Route::get('/account', function(){
   $name = 'Axel';
   return view('account', ['name' => $name]);
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

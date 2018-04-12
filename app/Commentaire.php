@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Commentaire extends Model
 {
   protected $table = "commentaire";
-  protected $fillable = array('contenu', 'active');
+  protected $fillable = ['contenu', 'active',];
 
   public function compte()
   {
