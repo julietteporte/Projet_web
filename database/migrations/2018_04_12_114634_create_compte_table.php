@@ -15,9 +15,8 @@ class CreateCompteTable extends Migration {
 		Schema::create('compte', function(Blueprint $table)
 		{
 			$table->integer('ID', true);
-			$table->string('AdresseMail', 50)->nullable();
-			$table->string('MotDePasse', 50)->nullable();
-			$table->string('MotDePasseFacebook', 50)->nullable();
+			$table->string('email')->unique();
+			$table->string('password');
 			$table->string('Nom', 25)->nullable();
 			$table->string('Prenom', 25)->nullable();
 			$table->date('DateInscription');
