@@ -24,7 +24,7 @@
         <div class="form-group col-lg-7 col-md-7">
           <a href="#" style='color:#8A0808'>CG</a>
           <div class="form-group col-lg-7 col-md-7">
-            <span class="glyphicon glyphicon-envelope"></span><a href="#" style='color:#8A0808'><b> Nous contacter</b></a>
+            <span class="glyphicon glyphicon-envelope"></span><a href="/contact_us" style='color:#8A0808'><b> Nous contacter</b></a>
           </div>
         </div>
       </div>
