@@ -12,18 +12,17 @@ class CreateCompteTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('compte', function(Blueprint $table)
-		{
-			$table->integer('ID', true);
+		Schema::create('compte', function(Blueprint $table) {
+            $table->increments('id');
+            $table->string('nom');
+            $table->string('prenom');
 			$table->string('email')->unique();
 			$table->string('password');
-			$table->string('Nom', 25)->nullable();
-			$table->string('Prenom', 25)->nullable();
-			$table->date('DateInscription');
-			$table->date('DateDerniereVisite');
-			$table->char('Genre', 5);
-			$table->boolean('Active')->default(0);
-			$table->integer('ID_TypeCompte')->index('FK_Compte_ID_TypeCompte');
+			$table->char('genre', 5)->nullable();
+			$table->boolean('isActive')->default(0);
+			$table->integer('ID_TypeCompte')->index('FK_Compte_ID_TypeCompte')->default(0);
+            $table->timestamps();
+            $table->rememberToken();
 		});
 	}
 

@@ -9,18 +9,10 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-      protected $table = "compte";
+    protected $table = 'compte';
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    /*protected $fillable = [
-        'name', 'email', 'password',
-    ];*/
-
-    protected $fillable = ['email', 'password', 'nom', 'prenom', 'dateinscription', 'datedernierevisite', 'genre', 'active',
+    protected $fillable = [
+        'nom', 'prenom', 'email', 'password', 'genre',
     ];
 
     /**
@@ -29,12 +21,12 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'motdepasse', 'remember_token',
+        'password', 'remember_token',
     ];
 
     public function typecompte()
     {
-      return $this->hasOne('App\Typecompte');
+      return $this->hasOne('App\Typecompte', 'ID_TypeCompte');
     }
 
     public function commande()
@@ -54,7 +46,7 @@ class User extends Authenticatable
 
     public function liker()
     {
-      return $this->belongsToMany('App\Photo', 'liker');
+      return $this->belongsToMany('App\Photo', 'liker', 'ID_Compte', 'ID_Photo');
     }
 
     public function commentaire()

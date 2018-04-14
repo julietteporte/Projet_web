@@ -18,11 +18,11 @@
     </div>
 
     <div class="well well" align="center">
-      <a href="#" style='color:#8A0808'> Politique de confidentialité</a>
+      <a href="/confidentiality" style='color:#8A0808'> Politique de confidentialité</a>
       <div class="form-row col-lg-8 col-md-8">
-        <a href="#" style='color:#8A0808'> Mentions légales</a>
+        <a href="/legal_notice" style='color:#8A0808'> Mentions légales</a>
         <div class="form-group col-lg-7 col-md-7">
-          <a href="#" style='color:#8A0808'>CG</a>
+          <a href="/terms_conditions" style='color:#8A0808'>CG</a>
           <div class="form-group col-lg-7 col-md-7">
             <span class="glyphicon glyphicon-envelope"></span><a href="/contact_us" style='color:#8A0808'><b> Nous contacter</b></a>
           </div>
@@ -39,4 +39,5 @@
         © BDE CESI Bordeaux - All rights reserved
       </div>
     </div>
-  </footer>
+  </div>
+</footer>

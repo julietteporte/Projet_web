@@ -21,7 +21,7 @@
 								placeholder="Last name" required>
 						</div>
 						<div class="form-group">
-							<label for="validationServer01">Pr�nom</label> <input type="text"
+							<label for="validationServer01">Prénom</label> <input type="text"
 								class="form-control is-valid" id="validationServer01"
 								placeholder="Name" required>
 						</div>
