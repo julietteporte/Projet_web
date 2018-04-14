@@ -15,16 +15,6 @@
     @include('includes.header')
   </header>
   <div class="container">
-    @if (Route::has('login'))
-    <div class="top-right links">
-      @auth
-      <a href="{{ url('/home') }}">Home</a>
-      @else
-      <a href="{{ route('login') }}">Se connecter</a>
-      <a href="{{ route('register') }}">S'enregistrer</a>
-      @endauth
-    </div>
-    @endif
     <div class="text-center">
       <h1><b>
         Bienvenue sur le site officiel du BDE CESI Bordeaux
