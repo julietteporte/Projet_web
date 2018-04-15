@@ -8,9 +8,9 @@
   <hr>
   <div class="social-media" align='center' >
     <div class="panel-body" >
-      <i class="fa fa-facebook" style='color:#8A0808'></i><b> Bde Cesi Bordeaux</b>
+      <a href="https://www.facebook.com/bde.cesibordeaux.9"><i class="fa fa-facebook" style='color:#8A0808'></i><b> Bde Cesi Bordeaux</b></a>
       <div class="form-group col-lg-8 col-md-8">
-        <i class="fa fa-twitter" style='color:#8A0808'></i><b> @BdeCesiBordeaux</b>
+        <a href="https://twitter.com/BdeCesiBordeaux"><i class="fa fa-twitter" style='color:#8A0808'></i><b> @BdeCesiBordeaux</b></a>
         <div class="form-group col-lg-8 col-md-8">
           <i class="fa fa-snapchat-ghost" style='color:#8A0808'></i><b> cesibordeaux</b>
         </div>

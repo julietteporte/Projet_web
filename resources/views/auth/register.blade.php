@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">S'enregistrer</div>
+                <div class="panel-heading">S'inscrire</div>
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
                         <div class="form-group{{ $errors->has('nom') ? ' has-error' : '' }}">
@@ -87,7 +87,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-5">
                                 <button type="submit" class="btn btn-primary">
-                                    S'enregistrer
+                                    S'inscrire
                                 </button>
                             </div>
                         </div>

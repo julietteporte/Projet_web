@@ -1,11 +1,16 @@
-@extends('layouts.app')
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-@section('content')
+<header class="row">
+    @include('includes.header')
+</header>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
+                <div class="panel-heading">Réinitialiser mon mot de passe</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -18,7 +23,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                            <label for="email" class="col-md-4 control-label">Adresse E-Mail</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
@@ -34,7 +39,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Send Password Reset Link
+                                    Envoyer le lien
                                 </button>
                             </div>
                         </div>
@@ -44,4 +49,6 @@
         </div>
     </div>
 </div>
-@endsection
+<footer class="row">
+    @include('includes.footer')
+</footer>
