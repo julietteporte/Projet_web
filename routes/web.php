@@ -11,6 +11,9 @@
 |
 */
 
+
+Route::get('/language/{lang}', 'HomeController@language');
+
 Route::get('/', function () {
     return view('welcome');
 });

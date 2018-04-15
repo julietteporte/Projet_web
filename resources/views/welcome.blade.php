@@ -17,7 +17,8 @@
   <div class="container">
     <div class="text-center">
       <h1><b>
-        Bienvenue sur le site officiel du BDE CESI Bordeaux
+      {{ __('home.welcome') }}
+<!--         Bienvenue sur le site officiel du BDE CESI Bordeaux -->
       </b></h1><br><br>
       <div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -58,6 +59,8 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+      </div>
+      </div>
       </div>
     </body>
 
