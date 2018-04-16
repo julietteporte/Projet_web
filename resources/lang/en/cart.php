@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'cart' => 'CART',
+    'identification' => 'IDENTIFICATION',
+    'payment' => 'PAYMENT',
+    'validation' => 'VALIDATION',
+    'noAccount' => 'No account yet ? Register',
+    'argument1' => 'Propose activities and vote for your favorites',
+    'argument2' => 'Enrol to the activities',
+    'argument3' => 'Share your photos of past events',
+    'register' => 'Register',
+    'haveAccount' => 'Do you have an account? Log in',
+    'login' => 'Log in',
+    'email' => 'Email',
+    'password' => 'Password',
+    'passwordForgotten' => 'Forgotten password ?',
+    'loginFacebook' => 'Log in with Facebook',
+    'choosePayment' => 'Choose your method of payment below',
+    'giveTreasurer' => 'To give to the treasurer of the association',
+    'recap' => 'ORDER SUMMARY',
+    'price' => 'PRICE',
+    'choose' => 'CHOOSE A MEANS OF PAYMENT',
+    'text1' => 'Thank you,',
+    'text2' => 'Your order has been taken into account, an email will be sent to you.',
+    'formatPDF' => 'Click here to get your invoice in PDF format',
+];
