@@ -14,7 +14,6 @@
   <header class="row">
     @include('includes.header')
   </header>
-  <div class="container">
     <div class="text-center">
       <h1><b>
       {{ __('home.welcome') }}

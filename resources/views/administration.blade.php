@@ -20,11 +20,8 @@
 			<div class="text-center">
 				<h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{__ ('administration.userSection')}}</h3>
 			</div>
-			<div class="row col-lg-6 text-center">
-				<h4>{{__ ('administration.waiting')}}</h4>
-				<p>Liste !!!</p>
-			</div>
-			<div class="row col-lg-6">
+			<br>
+			<div class="row col-lg-12">
 				<ul class="nav nav-tabs">
 					<li class="active"><a data-toggle="tab" href="#adminetudiant">{{__ ('administration.student')}}</a></li>
 					<li><a data-toggle="tab" href="#adminmembre">{{__ ('administration.member')}}</a></li>
