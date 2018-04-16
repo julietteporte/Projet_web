@@ -17,6 +17,7 @@ class CreateLikerTable extends Migration {
 			$table->integer('ID_Compte');
 			$table->integer('ID_Photo')->index('FK_liker_ID_Photo');
 			$table->primary(['ID_Compte','ID_Photo']);
+            $table->timestamps();
 		});
 	}
 

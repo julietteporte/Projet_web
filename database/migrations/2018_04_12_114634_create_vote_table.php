@@ -18,6 +18,7 @@ class CreateVoteTable extends Migration {
 			$table->integer('ID_Compte')->index('FK_Vote_ID_Compte');
 			$table->integer('ID_TypeVote')->index('FK_Vote_ID_TypeVote');
 			$table->integer('ID_Manifestation')->index('FK_Vote_ID_Manifestation');
+            $table->timestamps();
 		});
 	}
 
