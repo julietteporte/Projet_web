@@ -7,15 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class Commentaire extends Model
 {
   protected $table = "commentaire";
-  protected $fillable = ['contenu', 'active',];
+  protected $fillable = ['contenu', 'isactive',];
 
   public function compte()
   {
-    return $this->hasOne('App\Compte');
+    return $this->hasOne('App\Compte', 'ID_Compte');
   }
 
   public function photo()
   {
-    return $this->hasOne('App\Photo');
+    return $this->hasOne('App\Photo', 'ID_Photo');
   }
 }

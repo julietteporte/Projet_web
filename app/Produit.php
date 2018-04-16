@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Produit extends Model
 {
   protected $table = "produit";
-  protected $fillable = ['intitule', 'legende', 'description', 'prix', 'disponibilite', 'active',];
+  protected $fillable = ['intitule', 'legende', 'description', 'prix', 'disponibilite', 'isactive',];
 
   public function commandeligne()
   {
@@ -16,7 +16,7 @@ class Produit extends Model
 
   public function categorie()
   {
-    return $this->hasOne('App\Categorie');
+    return $this->hasOne('App\Categorie', 'ID_Categorie');
   }
 
   public function image()

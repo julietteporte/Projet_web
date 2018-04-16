@@ -10,16 +10,16 @@ class Vote extends Model
 
   public function compte()
   {
-    return $this->hasOne('App\Compte');
+    return $this->hasOne('App\Compte', 'ID_Compte');
   }
 
   public function typevote()
   {
-    return $this->hasOne('App\Typevote');
+    return $this->hasOne('App\Typevote', 'ID_Typevote');
   }
 
   public function manifestation()
   {
-    return $this->hasOne('App\Manifestation');
+    return $this->hasOne('App\Manifestation', 'ID_Manifestation');
   }
 }
