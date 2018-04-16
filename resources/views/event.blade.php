@@ -12,7 +12,7 @@
 	<div class="col-lg-12 col-md-12">
 		<div>
 			<br />
-			<h2 class="text-center">MANIFESTATION</h2>
+			<h2 class="text-center">{{__ ('event.title')}}</h2>
 			<br />
 		</div>
 	</div>

@@ -1,12 +1,12 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/style.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<header class="row">
-    @include('includes.header')
-</header>
-
+<header class="row"> @include('includes.header') </header>
 <div class="container">
 	<div class="row">
 		<div class="row">
@@ -14,9 +14,9 @@
 				<div>
 					<br />
 					<h2 class="text-center">
-						VOTES POUR LES IDEES QUI TE PLAISENT
-						<button class="btn pull-right" role="button">Proposer
-							une id�e</button>
+						{{__ ('suggestionBox.uploadImage')}}
+						<button class="btn pull-right" role="button">{{__
+							('suggestionBox.suggest')}}</button>
 					</h2>
 					<br /> <br />
 				</div>
@@ -28,7 +28,7 @@
 					<div class="panel-body">
 						<div class="form-row text-center">
 							<div class="form-group">
-								<label>Nom de l'id�e</label>
+								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
 								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
@@ -42,9 +42,9 @@
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<label>Description</label>
-								<p>Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement</p>
+								<p>Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement</p>
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<button class="btn btn-success" role="button">
@@ -56,7 +56,7 @@
 								</button>
 							</div>
 							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Propos� par : </label>
+								<label>Proposé par : </label>
 							</div>
 						</div>
 					</div>
@@ -67,7 +67,7 @@
 					<div class="panel-body">
 						<div class="form-row text-center">
 							<div class="form-group">
-								<label>Nom de l'id�e</label>
+								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
 								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
@@ -81,9 +81,9 @@
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<label>Description</label>
-								<p>Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement</p>
+								<p>Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement</p>
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<button class="btn btn-success" role="button">
@@ -95,7 +95,7 @@
 								</button>
 							</div>
 							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Propos� par : </label>
+								<label>Proposé par : </label>
 							</div>
 						</div>
 					</div>
@@ -106,7 +106,7 @@
 					<div class="panel-body">
 						<div class="form-row text-center">
 							<div class="form-group">
-								<label>Nom de l'id�e</label>
+								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
 								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
@@ -120,9 +120,9 @@
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<label>Description</label>
-								<p>Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement</p>
+								<p>Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement</p>
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<button class="btn btn-success" role="button">
@@ -134,7 +134,7 @@
 								</button>
 							</div>
 							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Propos� par : </label>
+								<label>Proposé par : </label>
 							</div>
 						</div>
 					</div>
@@ -145,7 +145,7 @@
 					<div class="panel-body">
 						<div class="form-row text-center">
 							<div class="form-group">
-								<label>Nom de l'id�e</label>
+								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
 								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
@@ -159,9 +159,9 @@
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<label>Description</label>
-								<p>Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement</p>
+								<p>Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement</p>
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<button class="btn btn-success" role="button">
@@ -173,7 +173,7 @@
 								</button>
 							</div>
 							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Propos� par : </label>
+								<label>Proposé par : </label>
 							</div>
 						</div>
 					</div>
@@ -184,7 +184,7 @@
 					<div class="panel-body">
 						<div class="form-row text-center">
 							<div class="form-group">
-								<label>Nom de l'id�e</label>
+								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
 								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
@@ -198,9 +198,9 @@
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<label>Description</label>
-								<p>Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement</p>
+								<p>Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement</p>
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<button class="btn btn-success" role="button">
@@ -212,7 +212,7 @@
 								</button>
 							</div>
 							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Propos� par : </label>
+								<label>Proposé par : </label>
 							</div>
 						</div>
 					</div>
@@ -223,7 +223,7 @@
 					<div class="panel-body">
 						<div class="form-row text-center">
 							<div class="form-group">
-								<label>Nom de l'id�e</label>
+								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
 								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
@@ -237,9 +237,9 @@
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<label>Description</label>
-								<p>Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement -
-									Description de l'�v�nement - Description de l'�v�nement</p>
+								<p>Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement -
+									Description de l'événement - Description de l'événement</p>
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<button class="btn btn-success" role="button">
@@ -251,7 +251,7 @@
 								</button>
 							</div>
 							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Propos� par : </label>
+								<label>Proposé par : </label>
 							</div>
 						</div>
 					</div>
@@ -260,6 +260,4 @@
 		</div>
 	</div>
 </div>
-<footer class="row">
-  @include('includes.footer')
-</footer>
+<footer class="row"> @include('includes.footer') </footer>
