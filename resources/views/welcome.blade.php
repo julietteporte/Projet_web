@@ -17,8 +17,8 @@
   <div class="container">
     <div class="text-center">
       <h1><b>
-      {{ __('home.welcome') }}
-<!--         Bienvenue sur le site officiel du BDE CESI Bordeaux -->
+        {{ __('home.welcome') }}
+        <!--         Bienvenue sur le site officiel du BDE CESI Bordeaux -->
       </b></h1><br><br>
       <div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -29,7 +29,6 @@
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
           </ol>
-
 
           <div class="carousel-inner">
             <div class="item active">
@@ -60,11 +59,11 @@
           </a>
         </div>
       </div>
-      </div>
-      </div>
-    </body>
+    </div>
+  </div>
+</body>
 
-    <footer class="row">
-      @include('includes.footer')
-    </footer>
-    </html>
+<footer class="row">
+  @include('includes.footer')
+</footer>
+</html>
