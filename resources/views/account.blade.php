@@ -33,17 +33,17 @@
 		<form action="/action_page.php">
 			<div class="col-lg-6 col-md-6">
 				<div class="form-group">
-					<label for="firstname">{{__ ('account.firstName')}}*</label> <input
+					<label for="firstname">{{__ ('auth.firstName')}}*</label> <input
 						type="text" class="form-control" id="fstname"
 						placeholder="{{__ ('account.enterFirstName')}}" name="first name">
 				</div>
 				<div class="form-group">
-					<label for="name">{{__ ('account.lastName')}}*</label> <input
+					<label for="name">{{__ ('auth.lastName')}}*</label> <input
 						type="text" class="form-control" id="nm"
 						placeholder="{{__ ('account.enterLastName')}}" name="name">
 				</div>
 				<div class="form-group">
-					<label for="pwd">{{__ ('account.password')}}*</label> <input
+					<label for="pwd">{{__ ('auth.password')}}*</label> <input
 						type="password" class="form-control" id="pwd"
 						placeholder="{{__ ('account.enterPassword')}}" name="pwd">
 				</div>
