@@ -23,6 +23,7 @@ class CreateManifestationTable extends Migration {
 			$table->enum('EtatValidite', array('Valide','En cours de traitement','Rejete'))->default('En cours de traitement');
 			$table->text('Frequence', 65535);
 			$table->integer('ID_Compte')->index('FK_Manifestation_ID_Compte');
+            $table->timestamps();
 		});
 	}
 
