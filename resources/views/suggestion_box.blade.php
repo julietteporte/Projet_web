@@ -15,8 +15,8 @@
 					<br />
 					<h2 class="text-center">
 						{{__ ('suggestionBox.uploadImage')}}
-						<button class="btn pull-right" role="button">{{__
-							('suggestionBox.suggest')}}</button>
+						<button class="btn pull-right" role="button"><a href="/submit_idea">{{__
+							('suggestionBox.suggest')}}</a></button>
 					</h2>
 					<br /> <br />
 				</div>
