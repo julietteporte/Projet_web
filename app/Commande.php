@@ -16,16 +16,16 @@ class Commande extends Model
 
   public function moyenpaiement()
   {
-    return $this->hasOne('App\Moyenpaiement');
+    return $this->hasOne('App\Moyenpaiement', 'ID_MoyenPaiement');
   }
 
   public function etatvente()
   {
-    return $this->hasOne('App\Etatvente');
+    return $this->hasOne('App\Etatvente', 'ID_Etatvente');
   }
 
   public function commandeligne()
   {
-    return $this->hasMany('App\Commandeligne');
+    return $this->hasMany('App\Commandeligne', 'ID_CommandeLigne');
   }
 }

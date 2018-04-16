@@ -8,7 +8,7 @@
   <hr>
   <div class="social-media" align='center' >
     <div class="panel-body" >
-      <a href="https://www.facebook.com/bde.cesibordeaux.9"><i class="fa fa-facebook" style='color:#8A0808'></i><b> Bde Cesi Bordeaux</b></a>
+      <a href="https://www.facebook.com/bdecesibdx/"><i class="fa fa-facebook" style='color:#8A0808'></i><b> Bde Cesi Bordeaux</b></a>
       <div class="form-group col-lg-8 col-md-8">
         <a href="https://twitter.com/BdeCesiBordeaux"><i class="fa fa-twitter" style='color:#8A0808'></i><b> @BdeCesiBordeaux</b></a>
         <div class="form-group col-lg-8 col-md-8">
@@ -32,7 +32,11 @@
     <hr>
     <div class="col-lg-12">
       <div class="col-md-8" align="left" style='color:#6E6E6E;'>
-      {{__('footer.generatedPage') }}
+        {{__('footer.generatedPage') }}
+        <script type="text/javascript">
+          d = new Date();
+          document.write(d.toLocaleDateString()+' à '+d.toLocaleTimeString());
+        </script>
       </div>
       <div class="col-md-4" align="right">
         © BDE CESI Bordeaux - {{__('footer.rights') }}

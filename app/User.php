@@ -61,6 +61,6 @@ class User extends Authenticatable
 
     public function participer()
     {
-      return $this->belongsToMany('App\Manifestation', 'participer');
+      return $this->belongsToMany('App\Manifestation', 'participer', 'ID_Compte', 'ID_Maniifestation');
     }
 }
