@@ -29,11 +29,28 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/shop', 'ShopController@index')->name('shop');
 Route::get('/suggestion_box', 'SuggestionBoxController@index')->name('suggestion_box');
 Route::get('/event', 'EventController@index')->name('event');
-Route::get('/about_us', 'AboutUsController@index')->name('about_us');
-Route::get('/partners', 'PartnersController@index')->name('partners');
 Route::get('/cart', 'CartController@index')->name('cart');
-Route::get('/search', 'SearchController@index')->name('search');//petit bug encore
+Route::get('/search', 'SearchController@index')->name('search');
 Route::get('/contact_us', 'ContactUsController@index')->name('contact_us');
-Route::get('/legal_notice', 'HomeController@index')->name('legal_notice');
-Route::get('/terms_conditions', 'HomeController@index')->name('terms_conditions');
-Route::get('/confidentiality', 'HomeController@index')->name('confidentiality');
+Route::get('/administration', 'AdministrationController@index')->name('administration');
+
+
+Route::get('/confidentiality', function () {
+    return view('confidentiality');
+});
+
+Route::get('/legal_notice', function () {
+    return view('legal_notice');
+});
+
+Route::get('/terms_conditions', function () {
+    return view('terms_conditions');
+});
+
+Route::get('/about_us', function () {
+    return view('about_us');
+});
+
+Route::get('/partners', function () {
+    return view('partners');
+});
