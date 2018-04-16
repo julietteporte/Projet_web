@@ -8,7 +8,6 @@ return [
     'suggestionSection' => 'Administration page for suggestions management',
     'articleSection' => 'Administration page for article management',
     'manifestationSection' => 'Administration page for events management',
-    'waiting' => 'WAITING',
     'disable' => 'DISABLE',
     'activate' => 'ACTIVATE',
     'create' => 'CREATE',

@@ -16,7 +16,9 @@
 </head>
 
 <body>
-	<header class="row"> @include('includes.header') </header>
+	<header class="row">
+		@include('includes.header')
+	</header>
 	<div class="text-center">
 		<h1>
 			<b> {{__ ('account.myAccount')}} <span
@@ -48,23 +50,28 @@
 						placeholder="{{__ ('account.enterPassword')}}" name="pwd">
 				</div>
 				<div class="text-right">
-					<button type="submit" class="btn btn-default">{{__
+					<button type="submit" class="btn btn-primary">{{__
 						('account.saveModifications')}}</button>
 				</div>
 			</div>
 			<p>
-				<br> <FONT size="1"><I>Conformément à la loi informatique et Liberté
-						du 6 janvier 1978 modifiée, vous disposez d'un droit d'accès, de
-						rectifications et d'opposition relatif aux informations vous
-						concernant en vous adressant à BDE CESI Bordeaux : 264 Boulevard
-						Godard, 33300 – France ou par e-mail à
-						communication@bdecesibordeaux.fr</I></FONT>
+				<br> <FONT size="1"><I>{{__ ('account.law')}}</I></FONT>
 			</p>
 			<div class="text-right text-danger">*{{__ ('account.requiredField')}}</div>
+			<br><br><br>
+			<div class="form-group text-right">
+				<label for="state">{{__ ('account.state')}}</label>
+			</div>
 		</form>
+		<a href="/contact_us" ><div class="text-right">
+			<button class="btn btn-primary">
+				{{__('account.contactUs')}}</button>
+		</div></a>
 	</div>
 	<br>
 	<br>
-	<footer class="row"> @include('includes.footer') </footer>
+	<footer class="row">
+		@include('includes.footer')
+	</footer>
 </body>
 </html>
