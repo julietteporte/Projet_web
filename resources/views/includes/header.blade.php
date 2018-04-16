@@ -21,8 +21,7 @@ header {
 			<ul class="nav navbar-nav navbar-right" id="navbar_header">
 				<li><a href="/language/fr" style='color: #FFFFFF;'>fr</a></li>
 				<li><a href="/language/en" style='color: #FFFFFF;'>en</a></li>
-				<li><a href="#" style='color: #FFFFFF;'><span
-						class="glyphicon glyphicon-shopping-cart" title="Panier"></span></a></li>
+				<li><a href="/cart_recap" style='color: #FFFFFF;'><span class="glyphicon glyphicon-shopping-cart" title="Panier"></span></a></li>
 				@guest
 				<li><a href="{{ route('login') }}" style='color: #FFFFFF;'>{{
 						__('header.login') }}</a></li>
