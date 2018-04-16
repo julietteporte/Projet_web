@@ -6,13 +6,11 @@
 <header class="row">
     @include('includes.header')
 </header>
-
-
 <div class="row">
 	<div class="col-lg-12 col-md-12">
 		<div>
 			<br />
-			<h2 class="text-center">LES PRODUITS</h2>
+			<h2 class="text-center">{{__ ('shop.article')}}</h2>
 			<br />
 		</div>
 	</div>
@@ -27,10 +25,10 @@
 						</div>
 						<div class="form-group col-lg-6 col-md-6">
 							<br /> <label>Nom</label> <br /> <br /> <br /> <label>Prix
-								�</label>
+								€</label>
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
-							<p>Br�ve description produit</p>
+							<p>Brève description produit</p>
 						</div>
 					</div>
 				</div>
@@ -46,10 +44,10 @@
 						</div>
 						<div class="form-group col-lg-6 col-md-6">
 							<br /> <label>Nom</label> <br /> <br /> <br /> <label>Prix
-								�</label>
+								€</label>
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
-							<p>Br�ve description produit</p>
+							<p>Brève description produit</p>
 						</div>
 					</div>
 				</div>
@@ -64,10 +62,10 @@
 						</div>
 						<div class="form-group col-lg-6 col-md-6">
 							<br /> <label>Nom</label> <br /> <br /> <br /> <label>Prix
-								�</label>
+								€</label>
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
-							<p>Br�ve description produit</p>
+							<p>Brève description produit</p>
 						</div>
 					</div>
 				</div>
@@ -82,10 +80,10 @@
 						</div>
 						<div class="form-group col-lg-6 col-md-6">
 							<br /> <label>Nom</label> <br /> <br /> <br /> <label>Prix
-								�</label>
+								€</label>
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
-							<p>Br�ve description produit</p>
+							<p>Brève description produit</p>
 						</div>
 					</div>
 				</div>
@@ -100,10 +98,10 @@
 						</div>
 						<div class="form-group col-lg-6 col-md-6">
 							<br /> <label>Nom</label> <br /> <br /> <br /> <label>Prix
-								�</label>
+								€</label>
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
-							<p>Br�ve description produit</p>
+							<p>Brève description produit</p>
 						</div>
 					</div>
 				</div>
@@ -118,10 +116,10 @@
 						</div>
 						<div class="form-group col-lg-6 col-md-6">
 							<br /> <label>Nom</label> <br /> <br /> <br /> <label>Prix
-								�</label>
+								€</label>
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
-							<p>Br�ve description produit</p>
+							<p>Brève description produit</p>
 						</div>
 					</div>
 				</div>
@@ -130,7 +128,7 @@
 	</div>
 	<div class="col-lg-3 col-md-3">
 		<div>
-			<h3>LES PLUS COMMANDES</h3>
+			<h3>{{__ ('shop.mostCommanded')}}</h3>
 		</div>
 		<div class="panel panel-default">
 			<div class="panel-body">
@@ -140,8 +138,8 @@
 				</div>
 				<div class="form-group col-lg-6 col-md-6">
 					<label>Nom</label> <br /> <br /> <label class="text-danger">Prix
-						� TTC</label> <label>L�gende produit</label>
-					<p>Br�ve description produit</p>
+						€ TTC</label> <label>Légende produit</label>
+					<p>Brève description produit</p>
 				</div>
 				<div class="form-group col-lg-3 col-md-3">
 					<button class="btn" role="button">
@@ -159,8 +157,8 @@
 				</div>
 				<div class="form-group col-lg-6 col-md-6">
 					<label>Nom</label> <br /> <br /> <label class="text-danger">Prix
-						� TTC</label> <label>L�gende produit</label>
-					<p>Br�ve description produit</p>
+						€ TTC</label> <label>Légende produit</label>
+					<p>Brève description produit</p>
 				</div>
 				<div class="form-group col-lg-3 col-md-3">
 					<button class="btn" role="button">
@@ -178,8 +176,8 @@
 				</div>
 				<div class="form-group col-lg-6 col-md-6">
 					<label>Nom</label> <br /> <br /> <label class="text-danger">Prix
-						� TTC</label> <label>L�gende produit</label>
-					<p>Br�ve description produit</p>
+						€ TTC</label> <label>Légende produit</label>
+					<p>Brève description produit</p>
 				</div>
 				<div class="form-group col-lg-3 col-md-3">
 					<button class="btn" role="button">
