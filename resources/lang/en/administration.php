@@ -3,11 +3,11 @@
 return [
     'suggestionsBox' => 'Suggestions box',
     'article' => 'Articles',
-    'manifestation' => 'Manifestations',
+    'manifestation' => 'Events',
     'userSection' => 'Administration page for account management',
     'suggestionSection' => 'Administration page for suggestions management',
     'articleSection' => 'Administration page for article management',
-    'manifestationSection' => 'Administration page for manifestations management',
+    'manifestationSection' => 'Administration page for events management',
     'waiting' => 'WAITING',
     'disable' => 'DISABLE',
     'activate' => 'ACTIVATE',

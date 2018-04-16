@@ -9,7 +9,7 @@ return [
     'aboutUs' => 'ABOUT US',
     'shop' => 'SHOP',
     'suggestionBox' => 'SUGGESTIONS BOX',
-    'manifestation' => 'MANIFESTATIONS',
+    'manifestation' => 'EVENTS',
     'partners' => 'PARTNERS',
     'search' => 'Search'
 ];
