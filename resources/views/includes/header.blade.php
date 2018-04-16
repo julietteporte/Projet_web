@@ -23,6 +23,7 @@ header {
         <li><a href="/language/en" style='color: #FFFFFF;'>en</a></li>
         <li><a href="/cart_recap" style='color: #FFFFFF;'><span class="glyphicon glyphicon-shopping-cart" title="Panier"></span></a></li>
         @guest
+        <a href="/administration>"<span class="glyphicon glyphicon-cogv" title="Panier"></span></a>
         <li><a href="{{ route('login') }}" style='color: #FFFFFF;'>{{
           __('header.login') }}</a></li>
           <li><a href="{{ route('register') }}" style='color: #FFFFFF;'>{{
@@ -38,7 +39,7 @@ header {
 
 
 
-              <div class="container" align="center"  role="search" >
+              <div class="container" align="center" role="search" >
                 <form class="navbar-form navbar-search" action="/search" method="post">
                   <div class="form-group">
                     <div class="dropdown">
