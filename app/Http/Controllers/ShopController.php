@@ -3,15 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App;
+use App\Produit;
 
 class ShopController extends Controller
 {
-
-
     public function index()
     {
-        return view('shop');
+      $produit = Produit::all();
+      return view('shop')->with('produit',$produit);
     }
 }
 ?>
