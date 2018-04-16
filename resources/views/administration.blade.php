@@ -8,6 +8,7 @@
 </header>
 
 <div class="container">
+	<br><br><br>
 	<ul class="nav nav-tabs">
 		<li class="active"><a data-toggle="tab" href="#adminutilisateur">{{__ ('administration.user')}}</a></li>
 		<li><a data-toggle="tab" href="#adminboite">{{__ ('administration.suggestionsBox')}}</a></li>
@@ -132,7 +133,7 @@
 					</div>
 				</div>
 			</div>
-
+<br><br><br><br>
 			<footer class="row">
 				@include('includes.footer')
 			</footer>

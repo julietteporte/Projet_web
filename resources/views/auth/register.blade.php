@@ -7,12 +7,14 @@
     @include('includes.header')
 </header>
 <div class="container">
+    <br><br><br>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">S'inscrire</div>
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
+                        <br>
                         <div class="form-group{{ $errors->has('nom') ? ' has-error' : '' }}">
                             <label for="nom" class="col-md-4 control-label">Nom</label>
 

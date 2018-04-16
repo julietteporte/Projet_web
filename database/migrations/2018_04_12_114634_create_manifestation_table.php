@@ -19,7 +19,7 @@ class CreateManifestationTable extends Migration {
 			$table->text('Description', 65535)->nullable();
 			$table->date('DateManifestion')->nullable();
 			$table->decimal('Prix', 15, 3)->default(0.000);
-			$table->boolean('Active')->default(0);
+			$table->boolean('IsActive')->default(0);
 			$table->enum('EtatValidite', array('Valide','En cours de traitement','Rejete'))->default('En cours de traitement');
 			$table->text('Frequence', 65535);
 			$table->integer('ID_Compte')->index('FK_Manifestation_ID_Compte');

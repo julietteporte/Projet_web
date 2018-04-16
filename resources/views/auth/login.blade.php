@@ -7,6 +7,7 @@
     @include('includes.header')
 </header>
 <div class="container">
+    <br><br><br>
     <div class="row">
         <div class="col-lg-5 col-md-5 col-md-offset-1">
             <div class="panel panel-default">

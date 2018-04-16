@@ -18,7 +18,7 @@ class CreatePhotoTable extends Migration {
 			$table->string('Intitule', 50);
 			$table->string('Description', 100)->nullable();
 			$table->string('Fichier');
-			$table->boolean('Active')->default(0);
+			$table->boolean('IsActive')->default(0);
 			$table->integer('ID_Manifestation')->index('FK_Photo_ID_Manifestation');
 			$table->integer('ID_Compte')->index('FK_Photo_ID_Compte');
             $table->timestamps();
