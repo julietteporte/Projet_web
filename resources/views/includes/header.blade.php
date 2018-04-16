@@ -1,10 +1,10 @@
 <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/style.css" />
 <script
-        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
-        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
     header {
@@ -56,25 +56,30 @@
                                 <a href="/search"><span class="glyphicon glyphicon-search"></span></a>
                             </button>
                         </div>
+
                     </div>
+                  </div>
                 </form>
-            </div>
-        </div>
-        <div class="row">
-            <nav class="navbar navbar-default" role="navigation">
-                <ul class="nav nav-pills nav-justified">
+              </div>
+
+
+
+
+              <div class="row">
+                <nav class="navbar navbar-default" role="navigation">
+                  <ul class="nav nav-pills nav-justified">
                     <li><a href="/" class="text-muted"><h4>{{__('header.home') }}</h4></a></li>
                     <li><a href="/about_us" class="text-muted"><h4>
-                                {{__('header.aboutUs') }}</h4></a></li>
-                    <li><a href="/shop" class="text-muted"><h4>{{__('header.shop') }}</h4></a></li>
-                    <li><a href="/suggestion_box" class="text-muted"><h4>
-                                {{__('header.suggestionBox') }}</h4></a></li>
-                    <li><a href="/event" class="text-muted"><h4>
-                                {{__('header.manifestation') }}</h4></a></li>
-                    <li><a href="/partners" class="text-muted"><h4>
-                                {{__('header.partners') }}</h4></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+                      {{__('header.aboutUs') }}</h4></a></li>
+                      <li><a href="/shop" class="text-muted"><h4>{{__('header.shop') }}</h4></a></li>
+                      <li><a href="/suggestion_box" class="text-muted"><h4>
+                        {{__('header.suggestionBox') }}</h4></a></li>
+                        <li><a href="/event" class="text-muted"><h4>
+                          {{__('header.manifestation') }}</h4></a></li>
+                          <li><a href="/partners" class="text-muted"><h4>
+                            {{__('header.partners') }}</h4></a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </header>

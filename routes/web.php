@@ -31,10 +31,11 @@ Route::get('/suggestion_box', 'SuggestionBoxController@index')->name('suggestion
 Route::get('/event', 'EventController@index')->name('event');
 Route::get('/cart_recap', 'CartController@index')->name('cart_recap');
 Route::get('/search', 'SearchController@index')->name('search');
+
+Route::post('/search', 'SearchController@index')->name('search');
 Route::get('/contact_us', 'ContactUsController@index')->name('contact_us');
 Route::get('/administration', 'AdministrationController@index')->name('administration');
 Route::get('/submit_idea', 'SubmitIdeaController@index')->name('submit_idea');
-
 
 Route::get('/confidentiality', function () {
     return view('confidentiality');
