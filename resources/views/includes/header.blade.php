@@ -8,14 +8,14 @@
 
 <style>
     header {
-        background: url('pictures/baniere.jpg');
+        background: url('../pictures/baniere.jpg');
     }
 </style>
 
 <header>
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a href='/'><img src="pictures/logo.png" width="200" height="200"></a>
+			<a href='/'><img src="../pictures/logo.png" width="200" height="200"></a>
 		</div>
 		<div class="container-fluid">
 			<ul class="nav navbar-nav navbar-right" id="navbar_header">
