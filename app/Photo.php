@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Photo extends Model
 {
   protected $table = "photo";
-  protected $fillable = ['intitule', 'description', 'fichier', 'active',];
+  protected $fillable = ['intitule', 'description', 'fichier', 'isactive',];
 
   public function manifestation()
   {
-    return $this->belongsTo('App\Manifestation');
+    return $this->belongsTo('App\Manifestation', 'ID_Manifestation');
   }
 
   public function commentaire()
@@ -21,11 +21,11 @@ class Photo extends Model
 
   public function poster()
   {
-    return $this->hasOne('App\Compte');
+    return $this->hasOne('App\Compte', 'ID_Compte');
   }
 
   public function liker()
   {
-    return $this->belongsToMany('App\Compte');
+    return $this->belongsToMany('App\Compte', 'liker', 'ID_Photo', 'ID_Compte');
   }
 }
