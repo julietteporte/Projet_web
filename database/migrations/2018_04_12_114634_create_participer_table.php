@@ -17,6 +17,7 @@ class CreateParticiperTable extends Migration {
 			$table->integer('ID_Compte');
 			$table->integer('ID_Manifestation')->index('FK_participer_ID_Manifestation');
 			$table->primary(['ID_Compte','ID_Manifestation']);
+            $table->timestamps();
 		});
 	}
 

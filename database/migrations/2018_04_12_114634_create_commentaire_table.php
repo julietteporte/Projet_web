@@ -19,6 +19,7 @@ class CreateCommentaireTable extends Migration {
 			$table->boolean('Active')->default(0);
 			$table->integer('ID_Compte')->index('FK_Commentaire_ID_Compte');
 			$table->integer('ID_Photo')->index('FK_Commentaire_ID_Photo');
+            $table->timestamps();
 		});
 	}
 

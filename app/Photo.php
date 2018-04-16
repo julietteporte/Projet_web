@@ -26,6 +26,6 @@ class Photo extends Model
 
   public function liker()
   {
-    return $this->belongsToMany('App\Compte', 'liker', 'ID_Photo', 'ID_Compte');
+    return $this->belongsToMany('App\Compte', 'liker', 'ID_Photo', 'ID_Compte')->withTimestamps();
   }
 }
