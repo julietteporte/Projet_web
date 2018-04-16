@@ -8,7 +8,7 @@
 		@include('includes.header')
 	</header>
 
-<div class="row" th:fragment="content">
+<div class="row">
 	<h1 class="text-center">NOUS CONTACTER</h1>
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-md-offset-1">

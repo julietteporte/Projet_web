@@ -17,15 +17,15 @@
 	<div class="col-lg-6 col-md-6">
 		<h2 class="text-center">A quoi sert un BDE ?</h2>
 		<br />
-		<p>Un bureau d'�l�ves sert � bien des choses mais son r�le
-			principal est d'�couter, aider et animer.</p>
-		<p>Ecouter les besoins des �l�ves mais aussi les aider � mener
-			leurs projets � bout, et enfin animer la vie �tudiante de l'�cole.</p>
-		<p>Aussi, si vous avez besoin d'aide n'h�sitez pas � nous
-			contacter et nous nous ferons un plaisir de vous �tre utile.</p>
+		<p>Un bureau d'élèves sert à bien des choses mais son rôle
+			principal est d'écouter, aider et animer.</p>
+		<p>Ecouter les besoins des élèves mais aussi les aider à mener
+			leurs projets à bout, et enfin animer la vie étudiante de l'école.</p>
+		<p>Aussi, si vous avez besoin d'aide n'hésitez pas à nous
+			contacter et nous nous ferons un plaisir de vous être utile.</p>
 	</div>
 	<div class="col-lg-12 col-md-12">
-		<h2 class="text-center">L'�quipe au complet</h2>
+		<h2 class="text-center">L'équipe au complet</h2>
 		<div class="col-lg-4 col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -36,7 +36,7 @@
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
 							<label>NOM | ROLE</label>
-							<p>Explication r�le ...</p>
+							<p>Explication rôle ...</p>
 							<p>Email : blabla@viacesi.fr</p>
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
 							<label>NOM | ROLE</label>
-							<p>Explication r�le ...</p>
+							<p>Explication rôle ...</p>
 							<p>Email : blabla@viacesi.fr</p>
 						</div>
 					</div>
@@ -70,7 +70,7 @@
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
 							<label>NOM | ROLE</label>
-							<p>Explication r�le ...</p>
+							<p>Explication rôle ...</p>
 							<p>Email : blabla@viacesi.fr</p>
 						</div>
 					</div>

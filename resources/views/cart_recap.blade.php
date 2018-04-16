@@ -13,10 +13,10 @@
 	<div class="row">
 		<br /> <br />
 		<ul class="nav nav-pills nav-justified">
-			<li class="active"><a>PANIER</a></li>
-			<li><a>IDENTIFICATION</a></li>
-			<li><a>PAIEMENT</a></li>
-			<li><a>VALIDATION</a></li>
+			<li class="active"><a>{{__ ('cart.cart')}}</a></li>
+			<li><a>{{__ ('cart.identification')}}</a></li>
+			<li><a>{{__ ('cart.payment')}}</a></li>
+			<li><a>{{__ ('cart.validation')}}</a></li>
 		</ul>
 		<br /> <br /> <br />
 	</div>
@@ -31,12 +31,12 @@
 					</div>
 					<div class="col-lg-5 col-md-5">
 						<h4>NOM DU PRODUIT</h4>
-						<p>Cat�gorie : xxx</p>
+						<p>Catégorie : xxx</p>
 						<p>SUPPRIMER</p>
 					</div>
 					<div class="col-lg-3 col-md-3">
 						<p>Prix unitaire : 00,00</p>
-						<p>Quantit� : xxx</p>
+						<p>Quantité : xxx</p>
 					</div>
 				</div>
 			</div>
@@ -48,12 +48,12 @@
 					</div>
 					<div class="col-lg-5 col-md-5">
 						<h4>NOM DU PRODUIT</h4>
-						<p>Cat�gorie : xxx</p>
+						<p>Catégorie : xxx</p>
 						<p>SUPPRIMER</p>
 					</div>
 					<div class="col-lg-3 col-md-3">
 						<p>Prix unitaire : 00,00</p>
-						<p>Quantit� : xxx</p>
+						<p>Quantité : xxx</p>
 					</div>
 				</div>
 			</div>
@@ -63,13 +63,12 @@
 		<div class="col-lg-4 col-md-4">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<h4>RECAPITULATIF DE LA COMMANDE</h4>
+					<h4>{{__ ('cart.recap')}}</h4>
 					<div class="text-center">
-						<label>TOTAL TTC : </label> PRIX
+						<label>TOTAL TTC : </label> {{__ ('cart.price')}}
 					</div>
 					<div class="panel-body text-center">
-						<button class="btn" role="button">CHOISIR UN MOYEN DE
-							PAIEMENT</button>
+						<button class="btn" role="button">{{__ ('cart.choose')}}</button>
 					</div>
 				</div>
 			</div>
