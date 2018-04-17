@@ -26,15 +26,19 @@ Route::get('/account', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/shop', 'ShopController@index')->name('shop');
+Route::get('/shop/{ID}', 'ShopController@productDetail')->name('product_detail');
+
 Route::get('/suggestion_box', 'SuggestionBoxController@index')->name('suggestion_box');
+
 Route::get('/event', 'EventController@index')->name('event');
 Route::get('/event/{ID}', 'EventController@eventDetail')->name('event_detail');
 Route::post('/event/sendPicture', 'EventController@eventSendPicture')->name('event_send_picture');
 
 Route::get('/cart_recap', 'CartController@index')->name('cart_recap');
 
-Route::get('/seax', 'SearchController@index')->name('search');
+Route::get('/search', 'SearchController@index')->name('search');
 Route::post('/search', 'SearchController@index')->name('search');
 
 Route::get('/contact_us', 'ContactUsController@index')->name('contact_us');
@@ -43,6 +47,7 @@ Route::get('/administration', 'AdministrationController@index')->name('administr
 Route::post('/administration', 'AdministrationController@store')->name('administration');
 
 Route::get('/submit_idea', 'SubmitIdeaController@index')->name('submit_idea');
+Route::post('/submit_idea', 'SubmitIdeaController@submitSuggestion')->name('submit_idea');
 
 Route::get('/confidentiality', function () {
     return view('confidentiality');
@@ -78,5 +83,3 @@ Route::get('/map', function(){
     return view('map')->with('map', $map);
 
 });
-
-

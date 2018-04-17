@@ -1,25 +1,21 @@
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <link rel="stylesheet" href="css/style.css" />
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <header class="row"> @include('includes.header') </header>
 <div class="row">
-	<br /> <br /> <br />
+	<br/> <br/> <br/> <br/>
 	<div class="col-lg-9 col-md-9">
 		<div class="form-row">
-			<div class="form-group col-lg-4 col-md-4">
-				<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
-					alt="image" height="300" width="300">
+			<div class="form-group col-lg-4 col-md-4 col-lg-offset-1">
+				<img src="/uploads/{{ $produit->Fichier }}" alt="image" height="350" width="540">
 			</div>
-			<div class="form-group col-lg-8 col-md-8">
-				<h3>NOM DU PRODUIT</h3>
+			<div class="form-group col-lg-7 col-md-7">
+				<b><h2>{{ $produit->Intitule }}</h2></b>
 				<br />
 				<div class="col-lg-6 col-md-6">
-					<label>Etat : </label>
+					<label>Etat : {{ $produit->Disponibilite }}</label>
 				</div>
 				<div class="col-lg-6 col-md-6">
 					<div class="col-lg-4 col-md-4">
@@ -30,15 +26,16 @@
 							id="validationServer01" placeholder="Quantity" required>
 					</div>
 				</div>
-				<div class="col-lg-12 col-md-12">
+				<div class="col-lg-10 col-md-10">
 					<div class="text-center">
-						<br /> <label class="text-danger">Prix € TTC</label>
+						<br/> <label class="text-danger"><h3>{{ $produit->Prix }} € TTC</h3></label>
 					</div>
-					<br />
-					<p>Description produit</p>
-					<br />
+					<br/><br/>
+					<p>{{ $produit->Description }}</p>
+					<br/><br/><br/>
 				</div>
 				<div class="text-center">
+
 					<button class="btn" role="button">
 						<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
 						{{__ ('shop.addCart')}}

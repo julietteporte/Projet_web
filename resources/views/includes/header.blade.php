@@ -25,6 +25,9 @@ footer {position: relative; bottom: 0;left: 0; right: 0}
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" style='color: #FFFFFF;'> <span class="glyphicon glyphicon-user"></span> {{ Auth::user()->prenom}} <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="/account">{{ __('header.account') }}</a></li>
+						@if(Auth::user()->ID_TypeCompte === 2)
+						<li><a href="/administration"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>{{ __('header.admin') }}</a></li>
+						@endif
 						<li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('header.logout') }} </a><form id="logout-form" action="{{ route('logout') }}"method="POST" style="display: none;">{{ csrf_field() }}</form></li>
 					</ul> @endguest
 				</ul><br><br><br><br><br>
@@ -36,7 +39,7 @@ footer {position: relative; bottom: 0;left: 0; right: 0}
 								<div class="form-group has-feedback">
 									<input type="text" class="form-control" placeholder="Rechercher un produit" name="keywords_product">
 								</div>
-								<button type="submit" class="btn" name"rechercher" ><span class="glyphicon glyphicon-search"></span></button>
+								<button type="submit" class="btn" name="rechercher" ><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 						</div>
 					</form>

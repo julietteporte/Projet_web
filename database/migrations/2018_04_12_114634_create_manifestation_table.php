@@ -7,10 +7,10 @@ use Illuminate\Support\Facades\Schema;
 class CreateManifestationTable extends Migration {
 
 	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
+	* Run the migrations.
+	*
+	* @return void
+	*/
 	public function up()
 	{
 		Schema::create('manifestation', function(Blueprint $table)
@@ -19,9 +19,10 @@ class CreateManifestationTable extends Migration {
 			$table->string('Intitule', 50);
 			$table->text('Description', 65535)->nullable();
 			$table->date('DateManifestation');
-            $table->text('Lieu', 65535);
-            $table->decimal('Prix', 15, 2);
-            $table->text('Frequence', 65535);
+			$table->text('Lieu', 65535);
+			$table->decimal('Prix', 15, 2);
+			$table->text('Frequence', 65535);
+			$table->char('Fichier')->nullable();
 			$table->boolean('IsActive')->default(1);
 			$table->enum('EtatValidite', array('Valide','En cours de traitement','Rejete'))->default('Valide');
 			$table->integer('ID_Compte')->index('FK_Manifestation_ID_Compte');
@@ -30,10 +31,10 @@ class CreateManifestationTable extends Migration {
 
 
 	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
+	* Reverse the migrations.
+	*
+	* @return void
+	*/
 	public function down()
 	{
 		Schema::drop('manifestation');
