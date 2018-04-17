@@ -17,6 +17,7 @@
 	</ul>
 	<div class="tab-content">
 		<div id="adminutilisateur" class="tab-pane fade in active">
+			<br><br>
 			<div class="text-center">
 				<h3><span class="glyphicon glyphicon-user" aria-hidden="true"></span> {{__ ('administration.userSection')}}</h3>
 			</div>
@@ -62,9 +63,11 @@
 			</div>
 		</div>
 		<div id="adminboite" class="tab-pane fade">
+			<br><br>
 			<div class="text-center">
 				<h3><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> {{__ ('administration.suggestionSection')}}</h3>
 			</div>
+			<br><br>
 			<ul class="nav nav-tabs">
 				<li class="active"><a data-toggle="tab"
 					href="#adminattenteidee">{{__ ('administration.waiting')}}</a></li>
@@ -84,9 +87,11 @@
 				</div>
 			</div>
 			<div id="adminproduit" class="tab-pane fade">
+				<br><br>
 				<div class="text-center">
 					<h3><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> {{__ ('administration.articleSection')}}</h3>
 				</div>
+				<br><br>
 				<ul class="nav nav-tabs">
 					<li class="active"><a data-toggle="tab"
 						href="#admindesactiverproduit">{{__ ('administration.disable')}}</a></li>
@@ -145,10 +150,16 @@
 							</div>
 						</div>
 					</div>
+					<br><br>
 					<div id="adminmanifestion" class="tab-pane fade text-center">
 						<h3><span class="glyphicon glyphicon-file" aria-hidden="true"></span> {{__ ('administration.manifestationSection')}}</h3>
-						<p>Some content in menu 2.</p>
+						<br>
+						<a href="/eventform" ><div class="text-center">
+								<button class="btn btn-primary">
+									{{__('administration.createEvent')}}</button>
+							</div></a>
 					</div>
+					<br><br>
 				</div>
 			</div>
 <br><br><br><br>

@@ -21,4 +21,5 @@ return [
     'description' => 'Description',
     'uploadImage' => 'Upload an image',
     'waiting' => 'WAITING',
+    'createEvent' => 'Create an event',
 ];

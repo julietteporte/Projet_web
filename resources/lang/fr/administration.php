@@ -22,4 +22,5 @@ return [
     'description' => 'Description',
     'uploadImage' => 'Télécharger une image',
     'waiting' => 'EN ATTENTE',
+    'createEvent' => 'Créer une manifestation',
 ];
