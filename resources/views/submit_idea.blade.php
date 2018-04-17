@@ -35,10 +35,8 @@
 								class="form-control is-invalid" name="DateManifestation" id="validationServer04" required>
 						</div>
 						<div class="form-group col-lg-5 col-md-5">
-							<label for="validationServer04 "><span
-								class="glyphicon glyphicon-euro"></span>{{__
-								('suggestionBox.price')}}</label><input type=number
-								onchange="setTwoNumberDecimal" min="0" max="99" step="0.05"
+							<label for="validationServer04 ">{{__('suggestionBox.price')}}</label>
+							<input type=number onchange="setTwoNumberDecimal" min="0" max="99" step="0.05"
 								value="0.00" name="Prix" class="form-control is-invalid"
 								id="validationServer04" required>
 						</div>
@@ -53,7 +51,7 @@
 						</div>
 						<div class="row">
 							<div class="form-group">
-								<label for="Frequence" class="col-md-4 control-label">Fréquence</label>
+								<label for="Frequence" class="col-md-4 control-label">{{__ ('administration.frequency')}}</label>
 								<div class="col-md-6">
 									<input id="frequence" type="text" class="form-control"
 										name="Frequence" required autofocus>

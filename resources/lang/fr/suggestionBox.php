@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'submitIdea' => 'OU SOUMET NOUS TON IDÉE !',
+    'submitIdea' => 'SOUMETS NOUS TON IDÉE !',
     'postSuggestion' => 'Poster une idée',
     'entitled' => 'Intitulé',
     'place' => 'Lieu',
