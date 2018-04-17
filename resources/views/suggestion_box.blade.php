@@ -60,9 +60,9 @@
 					</div>
 				</div>
 			</div>
-			@endif 
-			@endforeach
 		</div>
+		@endif 
+		@endforeach
 	</div>
 </div>
 <footer class="row"> @include('includes.footer') </footer>
