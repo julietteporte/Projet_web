@@ -4,6 +4,7 @@ return [
     'login' => 'Se connecter',
     'register' => 'S\'inscrire',
     'account' => 'Mon compte',
+    'admin' => 'Administration',
     'logout' => 'Déconnexion',
     'home' => 'ACCUEIL',
     'aboutUs' => 'QUI SOMMES NOUS',
