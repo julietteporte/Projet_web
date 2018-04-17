@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class AdministrationController extends Controller
 {
-
-
     public function index()
     {
-        return view('administration');
+        $user = User::all();
+        return view('administration')->with('user', $user);
     }
 }
 ?>

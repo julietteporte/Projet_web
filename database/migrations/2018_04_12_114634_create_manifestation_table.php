@@ -17,11 +17,12 @@ class CreateManifestationTable extends Migration {
 			$table->integer('ID', true);
 			$table->string('Intitule', 50);
 			$table->text('Description', 65535)->nullable();
-			$table->date('DateManifestion')->nullable();
+			$table->date('DateManifestation');
+            $table->text('Lieu', 65535);
 			$table->decimal('Prix', 15, 3)->default(0.000);
-			$table->boolean('IsActive')->default(0);
-			$table->enum('EtatValidite', array('Valide','En cours de traitement','Rejete'))->default('En cours de traitement');
-			$table->text('Frequence', 65535);
+            $table->text('Frequence', 65535);
+			$table->boolean('IsActive')->default(1);
+			$table->enum('EtatValidite', array('Valide','En cours de traitement','Rejete'))->default('Valide');
 			$table->integer('ID_Compte')->index('FK_Manifestation_ID_Compte');
             $table->timestamps();
 		});

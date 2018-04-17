@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Manifestation extends Model
 {
   protected $table = "manifestation";
-  protected $fillable = ['intitule', 'description', 'datemanifestation', 'lieu', 'prix', 'etatvalidite', 'frequence', 'isactive', ];
+  protected $fillable = ['Intitule', 'Description', 'DateManifestation', 'Lieu', 'Prix', 'Frequence', ];
 
   public function créer()
   {

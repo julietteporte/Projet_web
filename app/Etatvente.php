@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Etatvente extends Model
 {
   protected $table = "etatvente";
-  protected $fillable = ['etat'];
+  protected $fillable = ['Etat'];
 
   public function commande()
   {

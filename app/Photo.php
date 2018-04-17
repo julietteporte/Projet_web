@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Photo extends Model
 {
   protected $table = "photo";
-  protected $fillable = ['intitule', 'description', 'fichier', 'isactive',];
+  protected $fillable = ['Intitule', 'Description', 'Fichier',];
 
   public function manifestation()
   {

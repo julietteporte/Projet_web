@@ -20,4 +20,5 @@ return [
     'price' => 'Price',
     'description' => 'Description',
     'uploadImage' => 'Upload an image',
+    'waiting' => 'WAITING',
 ];
