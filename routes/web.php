@@ -29,6 +29,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/shop', 'ShopController@index')->name('shop');
 Route::get('/suggestion_box', 'SuggestionBoxController@index')->name('suggestion_box');
 Route::get('/event', 'EventController@index')->name('event');
+Route::get('/event/{ID}', 'EventController@eventDetail')->name('event_detail');
+Route::post('/event/sendPicture', 'EventController@eventSendPicture')->name('event_send_picture');
+
 Route::get('/cart_recap', 'CartController@index')->name('cart_recap');
 
 Route::get('/seax', 'SearchController@index')->name('search');

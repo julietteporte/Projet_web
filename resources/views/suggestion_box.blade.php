@@ -31,7 +31,7 @@
 								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
-								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+								<img src="../pictures/logo.png"
 									alt="image" height="150" width="150">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
@@ -70,7 +70,7 @@
 								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
-								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+								<img src="../pictures/logo.png"
 									alt="image" height="150" width="150">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
@@ -109,7 +109,7 @@
 								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
-								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+								<img src="../pictures/logo.png"
 									alt="image" height="150" width="150">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
@@ -148,7 +148,7 @@
 								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
-								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+								<img src="../pictures/logo.png"
 									alt="image" height="150" width="150">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
@@ -187,7 +187,7 @@
 								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
-								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+								<img src="../pictures/logo.png"
 									alt="image" height="150" width="150">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
@@ -226,7 +226,7 @@
 								<label>Nom de l'idée</label>
 							</div>
 							<div class="form-group">
-								<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+								<img src="../pictures/logo.png"
 									alt="image" height="150" width="150">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">

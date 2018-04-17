@@ -26,56 +26,58 @@ header {
 					@guest
 					<li><a href="{{ route('login') }}" style='color: #FFFFFF;'>{{
 						__('header.login') }}</a></li>
-						<li><a href="{{ route('register') }}" style='color: #FFFFFF;'>{{
-							__('header.register') }}</a></li> @else
-							<li class="dropdown"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown" role="button" aria-expanded="false"
-								aria-haspopup="true" style='color: #FFFFFF;'> <span
-								class="glyphicon glyphicon-user"></span> {{ Auth::user()->prenom}}
-								<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="/account">{{ __('header.account') }}</a></li>
-								<li><a href="{{ route('logout') }}"
-									onclick="event.preventDefault();
-									document.getElementById('logout-form').submit();"> {{
-										__('header.logout') }} </a>
-										<form id="logout-form" action="{{ route('logout') }}"
-										method="POST" style="display: none;">{{ csrf_field() }}</form></li>
-									</ul></li> @endguest
-								</ul>
-								<br> <br> <br> <br> <br>
-
-
-								<div class="container" align="center"  role="search" >
-									<form class="navbar-form navbar-search" action="/search" method="post">
-										<div class="form-group">
-											<div class="dropdown">
-												<div class="form-group has-feedback">
-													<input type="text" class="form-control" placeholder="Rechercher un produit" name="keywords_product">
-												</div>
-												<button type="submit" class="btn" name"rechercher" ><span class="glyphicon glyphicon-search"></span></button>
-											</div>
-										</div>
-									</form>
-								</div>
-
-
-								<div class="row">
-									<nav class="navbar navbar-default" role="navigation">
-										<ul class="nav nav-pills nav-justified">
-											<li><a href="/" class="text-muted"><h4>{{__('header.home') }}</h4></a></li>
-											<li><a href="/about_us" class="text-muted"><h4>
-												{{__('header.aboutUs') }}</h4></a></li>
-												<li><a href="/shop" class="text-muted"><h4>{{__('header.shop') }}</h4></a></li>
-												<li><a href="/suggestion_box" class="text-muted"><h4>
-													{{__('header.suggestionBox') }}</h4></a></li>
-													<li><a href="/event" class="text-muted"><h4>
-														{{__('header.manifestation') }}</h4></a></li>
-														<li><a href="/partners" class="text-muted"><h4>
-															{{__('header.partners') }}</h4></a></li>
-														</ul>
-													</nav>
-												</div>
-											</div>
-										</header>
+				<li><a href="{{ route('register') }}" style='color: #FFFFFF;'>{{
+						__('header.register') }}</a></li> @else
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-expanded="false"
+					aria-haspopup="true" style='color: #FFFFFF;'> <span
+						class="glyphicon glyphicon-user"></span> {{ Auth::user()->prenom}}
+						<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="/account">{{ __('header.account') }}</a></li>
+						<li><a href="{{ route('logout') }}"
+							onclick="event.preventDefault();
+								document.getElementById('logout-form').submit();"> {{
+								__('header.logout') }} </a>
+							<form id="logout-form" action="{{ route('logout') }}"
+								method="POST" style="display: none;">{{ csrf_field() }}</form></li>
+					</ul></li> @endguest
+			</ul>
+			<br> <br> <br> <br> <br>
+			<div class="container" align="center">
+				<form class="navbar-form navbar-search" role="search" method="post" action="\search">
+					<div class="form-group">
+						<div class="dropdown">
+							<div class="form-group has-feedback">
+								<input type="text" class="form-control"
+									placeholder="{{
+													__('header.search') }}"
+									name="keywords">
+							</div>
+							<button type="submit" class="btn" style='color: #6E6E6E;'>
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</div>
+					</div>
+			</div>
+			</form>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar-default" role="navigation">
+				<ul class="nav nav-pills nav-justified">
+					<li><a href="/" class="text-muted"><h4>{{__('header.home') }}</h4></a></li>
+					<li><a href="/about_us" class="text-muted"><h4>
+								{{__('header.aboutUs') }}</h4></a></li>
+					<li><a href="/shop" class="text-muted"><h4>{{__('header.shop') }}</h4></a></li>
+					<li><a href="/suggestion_box" class="text-muted"><h4>
+								{{__('header.suggestionBox') }}</h4></a></li>
+					<li><a href="/event" class="text-muted"><h4>
+								{{__('header.manifestation') }}</h4></a></li>
+					<li><a href="/partners" class="text-muted"><h4>
+								{{__('header.partners') }}</h4></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
