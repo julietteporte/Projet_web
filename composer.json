@@ -19,6 +19,7 @@
         "symfony/thanks": "^1.0",
         "xethron/migrations-generator": "^2.0"
     },
+
     "autoload": {
         "classmap": [
             "database/seeds",
