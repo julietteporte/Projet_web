@@ -14,37 +14,38 @@
 				<div>
 					<br />
 					<h2 class="text-center">
-						{{__ ('suggestionBox.uploadImage')}}
-						<button class="btn pull-right" role="button"><a href="/submit_idea">{{__
-							('suggestionBox.suggest')}}</a></button>
+						{{__ ('suggestionBox.title')}}
+						<button class="btn pull-right" role="button">
+							<a href="/submit_idea">{{__ ('suggestionBox.suggest')}}</a>
+						</button>
 					</h2>
 					<br /> <br />
 				</div>
 			</div>
 		</div>
+		@foreach ($manifestations as $manifestation)
+		@if($manifestation->EtatValidite === 'En cours de traitement')
 		<div class="row">
 			<div class="col-lg-4 col-md-4">
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="form-row text-center">
 							<div class="form-group">
-								<label>Nom de l'idée</label>
+								<label>{{$manifestation->Intitule }}</label>
 							</div>
 							<div class="form-group">
-								<img src="../pictures/logo.png"
-									alt="image" height="150" width="150">
+								<img src="../pictures/logo.png" alt="image" height="150"
+									width="150">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
-								<label>Prix</label>
+								<label>Prix : {{ $manifestation->Prix }}</label>
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
-								<label>Date</label>
+								<label>Date : {{ $manifestation->DateManifestion }}</label>
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<label>Description</label>
-								<p>Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement</p>
+								<p>{{ $manifestation->Description }}</p>
 							</div>
 							<div class="form-group col-lg-12 col-md-5">
 								<button class="btn btn-success" role="button">
@@ -55,208 +56,12 @@
 										aria-hidden="true"></span>
 								</button>
 							</div>
-							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Proposé par : </label>
-							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="form-row text-center">
-							<div class="form-group">
-								<label>Nom de l'idée</label>
-							</div>
-							<div class="form-group">
-								<img src="../pictures/logo.png"
-									alt="image" height="150" width="150">
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Prix</label>
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Date</label>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<label>Description</label>
-								<p>Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement</p>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<button class="btn btn-success" role="button">
-									<span class="glyphicon glyphicon-thumbs-up"></span>
-								</button>
-								<button class="btn btn-danger" role="button">
-									<span class="glyphicon glyphicon-thumbs-down"
-										aria-hidden="true"></span>
-								</button>
-							</div>
-							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Proposé par : </label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="form-row text-center">
-							<div class="form-group">
-								<label>Nom de l'idée</label>
-							</div>
-							<div class="form-group">
-								<img src="../pictures/logo.png"
-									alt="image" height="150" width="150">
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Prix</label>
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Date</label>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<label>Description</label>
-								<p>Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement</p>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<button class="btn btn-success" role="button">
-									<span class="glyphicon glyphicon-thumbs-up"></span>
-								</button>
-								<button class="btn btn-danger" role="button">
-									<span class="glyphicon glyphicon-thumbs-down"
-										aria-hidden="true"></span>
-								</button>
-							</div>
-							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Proposé par : </label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="form-row text-center">
-							<div class="form-group">
-								<label>Nom de l'idée</label>
-							</div>
-							<div class="form-group">
-								<img src="../pictures/logo.png"
-									alt="image" height="150" width="150">
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Prix</label>
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Date</label>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<label>Description</label>
-								<p>Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement</p>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<button class="btn btn-success" role="button">
-									<span class="glyphicon glyphicon-thumbs-up"></span>
-								</button>
-								<button class="btn btn-danger" role="button">
-									<span class="glyphicon glyphicon-thumbs-down"
-										aria-hidden="true"></span>
-								</button>
-							</div>
-							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Proposé par : </label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="form-row text-center">
-							<div class="form-group">
-								<label>Nom de l'idée</label>
-							</div>
-							<div class="form-group">
-								<img src="../pictures/logo.png"
-									alt="image" height="150" width="150">
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Prix</label>
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Date</label>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<label>Description</label>
-								<p>Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement</p>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<button class="btn btn-success" role="button">
-									<span class="glyphicon glyphicon-thumbs-up"></span>
-								</button>
-								<button class="btn btn-danger" role="button">
-									<span class="glyphicon glyphicon-thumbs-down"
-										aria-hidden="true"></span>
-								</button>
-							</div>
-							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Proposé par : </label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="form-row text-center">
-							<div class="form-group">
-								<label>Nom de l'idée</label>
-							</div>
-							<div class="form-group">
-								<img src="../pictures/logo.png"
-									alt="image" height="150" width="150">
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Prix</label>
-							</div>
-							<div class="form-group col-lg-6 col-md-6">
-								<label>Date</label>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<label>Description</label>
-								<p>Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement -
-									Description de l'événement - Description de l'événement</p>
-							</div>
-							<div class="form-group col-lg-12 col-md-5">
-								<button class="btn btn-success" role="button">
-									<span class="glyphicon glyphicon-thumbs-up"></span>
-								</button>
-								<button class="btn btn-danger" role="button">
-									<span class="glyphicon glyphicon-thumbs-down"
-										aria-hidden="true"></span>
-								</button>
-							</div>
-							<div class="form-group col-lg-12 col-md-5 text-right">
-								<label>Proposé par : </label>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			@endif 
+			@endforeach
 		</div>
 	</div>
 </div>
