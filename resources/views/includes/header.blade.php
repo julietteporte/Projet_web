@@ -11,6 +11,7 @@ header {
 	background: url('../pictures/baniere.jpg');
 }
 </style>
+
 <header>
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -21,9 +22,9 @@ header {
 				<li><a href="/language/fr" style='color: #FFFFFF;'>fr</a></li>
 				<li><a href="/language/en" style='color: #FFFFFF;'>en</a></li>
 				<li><a href="/cart_recap" style='color: #FFFFFF;'><span
-						class="glyphicon glyphicon-shopping-cart" title="Panier"></span></a></li>
-				@guest
-				<li><a href="{{ route('login') }}" style='color: #FFFFFF;'>{{
+					class="glyphicon glyphicon-shopping-cart" title="Panier"></span></a></li>
+					@guest
+					<li><a href="{{ route('login') }}" style='color: #FFFFFF;'>{{
 						__('header.login') }}</a></li>
 				<li><a href="{{ route('register') }}" style='color: #FFFFFF;'>{{
 						__('header.register') }}</a></li> @else
@@ -59,7 +60,6 @@ header {
 							</button>
 						</div>
 					</div>
-			
 			</div>
 			</form>
 		</div>

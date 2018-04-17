@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b61cb1824cb1dc44c006a8ac1312a334",
+    "content-hash": "10fe88c12005c5c891e13d48a90a4c09",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -262,6 +262,56 @@
                 "parser"
             ],
             "time": "2018-03-08T01:11:30+00:00"
+        },
+        {
+            "name": "farhanwazir/laravelgooglemaps",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/farhanwazir/laravelgooglemaps.git",
+                "reference": "8451e3b0de386e3b779c142692b71645ea75357e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/farhanwazir/laravelgooglemaps/zipball/8451e3b0de386e3b779c142692b71645ea75357e",
+                "reference": "8451e3b0de386e3b779c142692b71645ea75357e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.*",
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FarhanWazir\\GoogleMaps\\": "src/FarhanWazir/GoogleMaps/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Farhan Wazir",
+                    "email": "seejee1@gmail.com",
+                    "role": "Author"
+                }
+            ],
+            "description": "Laravel Google Map package for 5.x. You can use all google map features in laravel.",
+            "keywords": [
+                "gmap",
+                "google",
+                "googlemap",
+                "laravel",
+                "map"
+            ],
+            "time": "2018-03-30T21:00:53+00:00"
         },
         {
             "name": "fideloper/proxy",
@@ -812,16 +862,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.25.0",
+            "version": "1.26.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4"
+                "reference": "b63c0d809256a434ea74e6b41ca5f5f9d16220e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cbcf13da0b531767e39eb86e9687f5deba9857b4",
-                "reference": "cbcf13da0b531767e39eb86e9687f5deba9857b4",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/b63c0d809256a434ea74e6b41ca5f5f9d16220e6",
+                "reference": "b63c0d809256a434ea74e6b41ca5f5f9d16220e6",
                 "shasum": ""
             },
             "require": {
@@ -833,14 +883,9 @@
                 "phpunit/phpunit": "^4.8.35 || ^5.7"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.23-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Carbon\\": "src/Carbon/"
+                    "": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -861,7 +906,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-03-19T15:50:49+00:00"
+            "time": "2018-04-16T14:54:26+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -4408,7 +4453,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "farhanwazir/laravelgooglemaps": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
