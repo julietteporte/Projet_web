@@ -8,7 +8,7 @@
 </header>
 <div class="row">
   <div class="col-lg-12 col-md-12">
-    @if(Auth::user()->ID_TypeCompte === 2)<br/><br/>
+    @if(isset($_SESSION['Auth']) && Auth::user()->ID_TypeCompte === 2)<br/><br/>
     <button type="submit" class="btn btn-default" align="center">Ajouter un produit</button>
     @endif
     <br/><br/>
@@ -28,13 +28,13 @@
           </div>
           <ul>
             <div class="form-group col-lg-4 col-md-4">
-              @if(Auth::user()->ID_TypeCompte === 2)
+              @if(isset($_SESSION['Auth']) && Auth::user()->ID_TypeCompte === 2)<br/><br/>
               <span class="glyphicon glyphicon-pencil" aria-hidden="true" text-right></span>
               @endif
               <a href="/shop/{{ $p->ID }}"><br/><br/><h4><b>{{ $p->Intitule }}</b></h4></a>
               <label class="text-danger"><h4>{{ $p->Prix }} € TTC</h4></label>
               <br><br>
-              @if(Auth::user()->ID_TypeCompte === 2)
+              @if(isset($_SESSION['Auth']) && Auth::user()->ID_TypeCompte === 2)<br/><br/>
               <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
               @endif
             </div>
