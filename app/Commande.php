@@ -11,7 +11,7 @@ class Commande extends Model
 
   public function compte()
   {
-    return $this->hasOne('App\Compte');
+    return $this->hasOne('App\User');
   }
 
   public function moyenpaiement()

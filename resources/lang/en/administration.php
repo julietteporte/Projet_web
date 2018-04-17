@@ -22,4 +22,9 @@ return [
     'uploadImage' => 'Upload an image',
     'waiting' => 'WAITING',
     'createEvent' => 'Create an event',
+    'joke' => 'You shall not pass !',
+    'createEvent' => 'Create en event',
+    'place' => 'Address',
+    'date' => 'Date',
+    'frequency' => 'Frequency',
 ];
