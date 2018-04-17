@@ -26,8 +26,8 @@ footer {position: relative; bottom: 0;left: 0; right: 0}
 					<ul class="dropdown-menu">
 						<li><a href="/account">{{ __('header.account') }}</a></li>
 						<li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('header.logout') }} </a><form id="logout-form" action="{{ route('logout') }}"method="POST" style="display: none;">{{ csrf_field() }}</form></li>
-					</ul> @endguest <br><br><br><br><br>
-				</ul>
+					</ul> @endguest
+				</ul><br><br><br><br><br>
 
 				<div class="container" align="center"  role="search" >
 					<form class="navbar-form navbar-search" action="/search" method="post">
@@ -57,4 +57,3 @@ footer {position: relative; bottom: 0;left: 0; right: 0}
 			</div>
 		</div>
 	</header>
-
