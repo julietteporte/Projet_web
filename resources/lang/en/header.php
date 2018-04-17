@@ -4,6 +4,7 @@ return [
     'login' => 'Login',
     'register' => 'Register',
     'account' => 'My account',
+    'admin' => 'Administration',
     'logout' => 'Logout',
     'home' => 'HOME',
     'aboutUs' => 'ABOUT US',
