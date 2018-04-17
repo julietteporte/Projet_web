@@ -5,6 +5,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
+<style>
+footer
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
+</style>
+
+
 <footer>
   <hr>
   <div class="social-media" align='center' >
@@ -34,8 +45,8 @@
       <div class="col-md-8" align="left" style='color:#6E6E6E;'>
         {{__('footer.generatedPage') }}
         <script type="text/javascript">
-          d = new Date();
-          document.write(d.toLocaleDateString()+' à '+d.toLocaleTimeString());
+        d = new Date();
+        document.write(d.toLocaleDateString()+' à '+d.toLocaleTimeString());
         </script>
       </div>
       <div class="col-md-4" align="right">

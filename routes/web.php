@@ -30,9 +30,10 @@ Route::get('/shop', 'ShopController@index')->name('shop');
 Route::get('/suggestion_box', 'SuggestionBoxController@index')->name('suggestion_box');
 Route::get('/event', 'EventController@index')->name('event');
 Route::get('/cart_recap', 'CartController@index')->name('cart_recap');
-Route::get('/search', 'SearchController@index')->name('search');
 
+Route::get('/seax', 'SearchController@index')->name('search');
 Route::post('/search', 'SearchController@index')->name('search');
+
 Route::get('/contact_us', 'ContactUsController@index')->name('contact_us');
 Route::get('/administration', 'AdministrationController@index')->name('administration');
 
