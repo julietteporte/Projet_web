@@ -6,6 +6,8 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <script type="js/script.js"></script>
+  
 <header class="row"> @include('includes.header') </header>
 
 <div class="container">
@@ -23,7 +25,9 @@
 		<div class="col-lg-7 col-md-7">
 			<p>{{ $manifestation->Description }}</p>
 
-			<p class="text-right"><label>Date : </label> {{ $manifestation->DateManifestion }}</p>
+			<p class="text-right">
+				<label>Date : </label> {{ $manifestation->DateManifestion }}
+			</p>
 		</div>
 		<div class="col-lg-5 col-md-5">
 			MAP <img src="../pictures/logo.png" alt="image" height="100"
@@ -67,3 +71,4 @@
 
 </div>
 <footer class="row"> @include('includes.footer') </footer>
+
