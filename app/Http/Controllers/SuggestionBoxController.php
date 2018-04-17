@@ -32,6 +32,5 @@ class SuggestionBoxController extends Controller
         $manifestations = Manifestation::all();
         return view('suggestion_box')->with('manifestations', $manifestations);
     }
-    
 }
 ?>

@@ -24,14 +24,15 @@ class SubmitIdeaController extends Controller
         if($request->has('btn_suggestion')){
             $add = $request->all();
             $event->ID_Compte = $id_Users;
+            $event->EtatValidite = 'En cours de traitement';
             $event->fill($add);
             $event->save();
         }
-        return view('event');
+        return redirect('/suggestion_box');
     }
     
     public function creation(){
-        return view("eventform");
+        return view('submit_idea');
     }
 }
 ?>

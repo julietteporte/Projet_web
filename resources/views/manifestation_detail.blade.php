@@ -34,13 +34,6 @@
 				width="100">
 		</div>
 	</div>
-	<div class="col-lg-3 col-md-3 text-center">
-		<img src="../pictures/logo.png" alt="image" height="150" width="150">
-	</div>
-	<div class="col-lg-3 col-md-3 text-center">
-		<img src="../pictures/logo.png" alt="image" height="150" width="150">
-	</div>
-
 	<div class="col-lg-12 col-md-12">
 		<form action="/event/sendPicture" method="post"
 			enctype="multipart/form-data">
@@ -57,7 +50,6 @@
 	<div class="col-lg-12 col-md-12">
 		<h3 class="text-center">Espace photos souvenir et commentaires</h3>
 		<br /> @foreach ($photos as $photo)
-
 		<div class="row">
 			<div class="col-md-4">
 				<img src="/uploads/{{ $photo->Fichier }}" alt="image" height="150"
@@ -66,9 +58,7 @@
 			<div class="col-md-8">{{ $photo->Description }}</div>
 		</div>
 		@endforeach
-
 	</div>
-
 </div>
 <footer class="row"> @include('includes.footer') </footer>
 

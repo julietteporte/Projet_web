@@ -23,9 +23,9 @@
 				</div>
 			</div>
 		</div>
-		@foreach ($manifestations as $manifestation)
-		@if($manifestation->EtatValidite === 'En cours de traitement')
 		<div class="row">
+			@foreach ($manifestations as $manifestation)
+			@if($manifestation->EtatValidite === 'En cours de traitement')
 			<div class="col-lg-4 col-md-4">
 				<div class="panel panel-default">
 					<div class="panel-body">
@@ -60,9 +60,9 @@
 					</div>
 				</div>
 			</div>
+			@endif 
+			@endforeach
 		</div>
-		@endif 
-		@endforeach
 	</div>
 </div>
 <footer class="row"> @include('includes.footer') </footer>
