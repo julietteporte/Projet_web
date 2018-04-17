@@ -45,7 +45,7 @@ header {
 			</ul>
 			<br> <br> <br> <br> <br>
 			<div class="container" align="center">
-				<form class="navbar-form navbar-search" role="search" method="post">
+				<form class="navbar-form navbar-search" role="search" method="post" action="\search">
 					<div class="form-group">
 						<div class="dropdown">
 							<div class="form-group has-feedback">
@@ -55,7 +55,7 @@ header {
 									name="keywords">
 							</div>
 							<button type="submit" class="btn" style='color: #6E6E6E;'>
-								<a href="/search"><span class="glyphicon glyphicon-search"></span></a>
+								<span class="glyphicon glyphicon-search"></span>
 							</button>
 						</div>
 					</div>
