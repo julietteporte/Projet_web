@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateManifestationTable extends Migration {
 
@@ -24,7 +25,6 @@ class CreateManifestationTable extends Migration {
 			$table->boolean('IsActive')->default(1);
 			$table->enum('EtatValidite', array('Valide','En cours de traitement','Rejete'))->default('Valide');
 			$table->integer('ID_Compte')->index('FK_Manifestation_ID_Compte');
-            $table->timestamps();
 		});
 	}
 

@@ -25,7 +25,7 @@
 						width="150"> <br /> <a href="/event/{{ $manifestation->ID }}"><h4>{{
 							$manifestation->Intitule }}</h4></a>
 					<p>{{ $manifestation->Description }}</p>
-					<label>{{ $manifestation->DateManifestion }}</label>
+					<label>{{ $manifestation->DateManifestation }}</label>
 				</div>
 			</div>
 		</div>

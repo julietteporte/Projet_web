@@ -78,7 +78,7 @@ class EventController extends Controller
             $event->fill($add);
             $event->save();
         }
-        return view('event');
+        return redirect('/event');
     }
 
     public function creation(){
