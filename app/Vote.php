@@ -10,7 +10,7 @@ class Vote extends Model
 
   public function compte()
   {
-    return $this->hasOne('App\Compte', 'ID_Compte');
+    return $this->hasOne('App\User', 'ID_Compte');
   }
 
   public function typevote()

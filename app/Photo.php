@@ -21,11 +21,11 @@ class Photo extends Model
 
   public function poster()
   {
-    return $this->hasOne('App\Compte', 'ID_Compte');
+    return $this->hasOne('App\User', 'ID_Compte');
   }
 
   public function liker()
   {
-    return $this->belongsToMany('App\Compte', 'liker', 'ID_Photo', 'ID_Compte')->withTimestamps();
+    return $this->belongsToMany('App\User', 'liker', 'ID_Photo', 'ID_Compte')->withTimestamps();
   }
 }

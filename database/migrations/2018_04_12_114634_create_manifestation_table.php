@@ -20,7 +20,7 @@ class CreateManifestationTable extends Migration {
 			$table->text('Description', 65535)->nullable();
 			$table->date('DateManifestation');
 			$table->text('Lieu', 65535);
-			$table->decimal('Prix', 15, 3)->default(0.000);
+			$table->decimal('Prix', 15, 2);
 			$table->text('Frequence', 65535);
 			$table->char('Fichier')->nullable();
 			$table->boolean('IsActive')->default(1);

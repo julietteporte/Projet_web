@@ -23,4 +23,9 @@ return [
     'uploadImage' => 'Télécharger une image',
     'waiting' => 'EN ATTENTE',
     'createEvent' => 'Créer une manifestation',
+    'joke' => 'Vous ne passerez pas !',
+    'createEvent' => 'Créer une manifestation',
+    'place' => 'Adresse',
+    'date' => 'Date',
+    'frequency' => 'Fréquence',
 ];

@@ -56,11 +56,11 @@ class User extends Authenticatable
 
     public function creer()
     {
-      return $this->belongsTo('App\Manifestation');
+      return $this->hasMany('App\Manifestation');
     }
 
     public function participer()
     {
-      return $this->belongsToMany('App\Manifestation', 'participer', 'ID_Compte', 'ID_Maniifestation')->withTimestamps();
+      return $this->belongsToMany('App\Manifestation', 'participer', 'ID_Compte', 'ID_Manifestation')->withTimestamps();
     }
 }
