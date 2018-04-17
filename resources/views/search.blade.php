@@ -2,20 +2,35 @@
 <link rel="stylesheet" href="css/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<html>
 
-<header class="row">
 	@include('includes.header')
-</header>
+
+
 <div class="container">
-	<h2>{{__ ('search.title')}}</h2>
-	<label>{{__ ('search.numberFind1')}} {{__ ('search.numberFind2')}}</label>
-	<ul>
-		<li>Nom</li>
-		<li>Nom</li>
-		<li>Nom</li>
-		<li>Nom</li>
+
+	@if(isset($_POST["keywords_product"]) && strlen($_POST["keywords_product"]) === 0)
+		<h2>Aucun mot clé renseigné</h2>
+
+	@else
+		<h2>{{__ ('search.title')}} <?php echo $_POST["keywords_product"]; ?></h2>
+		<label>{{__ ('search.numberFind1')}} {{__ ('search.numberFind2')}}</label>
+		<!-- <ul><br>
+			<li>Nom</li>
+			<li>Nom</li>
+			<li>Nom</li>
+			<li>Nom</li>
+		</ul> -->
+		<ul>
+		@foreach ($produit as $p)
+		@if($_POST["keywords_product"] === $p)
+		<li>{{ $p->Intitule }}</li>
+		@endif
+		@endforeach
 	</ul>
+	@endif
 </div>
-<footer class="row">
-	@include('includes.footer')
-</footer>
+
+@include('includes.footer')
+
+</html>

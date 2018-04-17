@@ -35,4 +35,6 @@ class HomeController extends Controller
         session()->save();
         return redirect()->back();
     }
+
+
 }
