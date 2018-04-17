@@ -12,7 +12,7 @@ class User extends Authenticatable
     protected $table = 'compte';
 
     protected $fillable = [
-        'nom', 'prenom', 'email', 'password', 'genre',
+        'id', 'nom', 'prenom', 'email', 'password', 'genre',
     ];
 
     /**
@@ -61,6 +61,6 @@ class User extends Authenticatable
 
     public function participer()
     {
-      return $this->belongsToMany('App\Manifestation', 'participer', 'ID_Compte', 'ID_Maniifestation')->withTimestamps();
+        return $this->belongsToMany('App\Manifestation', 'participer', 'ID_Compte', 'ID_Manifestation')->withTimestamps();
     }
 }

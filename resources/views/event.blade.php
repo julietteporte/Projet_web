@@ -22,7 +22,7 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="form-row text-center">
-					<img src="../pictures/logo.png" alt="image" height="150"
+					<img src="/pictures/logo.png" alt="image" height="150"
 						width="150"> <br /> <a href="/event/{{ $manifestation->ID }}"><h4>{{
 							$manifestation->Intitule }}</h4></a>
 					<p>{{ $manifestation->Description }}</p>

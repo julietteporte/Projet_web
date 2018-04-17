@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="style.css" />
 <link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,16 +16,18 @@
         </div>
       </div>
     </div>
-    <div class="well well" align="center" style="background: url('../pictures/baniere.jpg');">
-      <a href="/confidentiality" style='color:#FFFFFF'>{{__('footer.policy') }}</a>
-      <div class="form-row col-lg-8 col-md-8">
+    <div class="footer-background row" align="center">
+      <div class="form-row col-lg-3 col-md-3">
+      	<a href="/confidentiality" style='color:#FFFFFF'>{{__('footer.policy') }}</a>
+      </div>
+      <div class="form-row col-lg-3 col-md-3">
         <a href="/legal_notice" style='color:#FFFFFF'>{{__('footer.notice') }}</a>
-        <div class="form-group col-lg-7 col-md-7">
+      </div>
+      <div class="form-row col-lg-3 col-md-3">
           <a href="/terms_conditions" style='color:#FFFFFF'>{{__('footer.CG') }}</a>
-          <div class="form-group col-lg-7 col-md-7">
-            <span class="glyphicon glyphicon-envelope" style='color:#FFFFFF'></span><a href="/contact_us" style='color:#FFFFFF'><b> {{__('footer.contactUs') }}</b></a>
-          </div>
-        </div>
+      </div>
+      <div class="form-row col-lg-3 col-md-3">
+      	<span class="glyphicon glyphicon-envelope" style='color:#FFFFFF'></span><a href="/contact_us" style='color:#FFFFFF'><b> {{__('footer.contactUs') }}</b></a>
       </div>
     </div>
     <hr>

@@ -1,39 +1,42 @@
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/style.css" />
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   <script type="js/script.js"></script>
   
 <header class="row"> @include('includes.header') </header>
 
 <div class="container">
 	<div class="col-lg-12 col-md-12">
-		<div>
 			<br />
 			<h2 class="text-center">{{ $manifestation->Intitule }}</h2>
 			<br />
-		</div>
 	</div>
 	<div class="col-lg-4 col-md-4 text-center">
-		<img src="../pictures/logo.png" alt="image" height="300" width="300">
+		<img src="/pictures/logo.png" alt="image" height="300" width="300">
 	</div>
 	<div class="col-lg-8 col-md-8">
 		<div class="col-lg-7 col-md-7">
 			<p>{{ $manifestation->Description }}</p>
-
 			<p class="text-right">
 				<label>Date : </label> {{ $manifestation->DateManifestion }}
 			</p>
 		</div>
 		<div class="col-lg-5 col-md-5">
-			MAP <img src="../pictures/logo.png" alt="image" height="100"
+			MAP <img src="/pictures/logo.png" alt="image" height="100"
 				width="100">
 		</div>
 	</div>
+	@if (Auth::check())
+	
+	<div class="form-group col-lg-12 col-md-5">
+		<a href="/event/{{$manifestation->ID }}/participation">
+			<button class="btn btn-default" role="button">
+				@if (isset($participeFlag))
+					<span style="color:red;">Je ne participe pas</span>
+    			@else
+					<span style="color:green;">Je participe !</span>
+   				@endif
+			</button>
+		</a>
+	</div>
+	
 	<div class="col-lg-12 col-md-12">
 		<form action="/event/sendPicture" method="post"
 			enctype="multipart/form-data">
@@ -47,6 +50,7 @@
 			<button type="submit" class="btn btn-default">Envoyer</button>
 		</form>
 	</div>
+	@endif
 	<div class="col-lg-12 col-md-12">
 		<h3 class="text-center">Espace photos souvenir et commentaires</h3>
 		<br /> @foreach ($photos as $photo)
@@ -61,4 +65,3 @@
 	</div>
 </div>
 <footer class="row"> @include('includes.footer') </footer>
-
