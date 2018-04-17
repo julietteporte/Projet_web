@@ -29,13 +29,34 @@
 				</ul>
 				<div class="tab-content text-center">
 					<div id="adminetudiant" class="tab-pane fade in active">
-						<p>Liste Etudiants</p>
+                        <br>
+                       <ul>
+                        @foreach ($user as $usr)
+                            @if($usr->ID_TypeCompte === 1)
+                               <div>{{ $usr->nom }}   {{ $usr->prenom }}   {{ $usr->email }}</div>
+                               @endif
+                        @endforeach
+                       </ul>
 					</div>
 					<div id="adminmembre" class="tab-pane fade">
-						<p>Liste Membres</p>
+                        <br>
+                        <ul>
+                            @foreach ($user as $usr)
+                                @if($usr->ID_TypeCompte === 2)
+                                    <div>{{ $usr->nom }}   {{ $usr->prenom }}   {{ $usr->email }}</div>
+                                @endif
+                            @endforeach
+                        </ul>
 					</div>
 					<div id="adminsalarie" class="tab-pane fade">
-						<p>Liste Salariés</p>
+                        <br>
+                        <ul>
+                            @foreach ($user as $usr)
+                                @if($usr->ID_TypeCompte === 3)
+                                    <div>{{ $usr->nom }}   {{ $usr->prenom }}   {{ $usr->email }}</div>
+                                @endif
+                            @endforeach
+                        </ul>
 					</div>
 				</div>
 			</div>

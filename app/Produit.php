@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Produit extends Model
 {
   protected $table = "produit";
-  protected $fillable = ['intitule', 'legende', 'description', 'prix', 'disponibilite', 'isactive',];
+  protected $fillable = ['Intitule', 'Legende', 'Description', 'Prix', 'Disponibilite',];
 
   public function commandeligne()
   {

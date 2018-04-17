@@ -21,4 +21,5 @@ return [
     'price' => 'Prix',
     'description' => 'Description',
     'uploadImage' => 'Télécharger une image',
+    'waiting' => 'EN ATTENTE',
 ];

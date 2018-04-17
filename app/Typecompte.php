@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Typecompte extends Model
 {
   protected $table = "typecompte";
-  protected $fillable = ['type'];
+  protected $fillable = ['Type'];
 
   public function compte()
   {
