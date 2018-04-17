@@ -21,13 +21,13 @@
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="form-row">
-            <div class="form-group col-lg-6 col-md-6 text-center">
-              <img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
-              alt="image" height="100" width="100">
+            <div class="form-group col-lg-8 col-md-8 text-center">
+              <img src="/uploads/{{ $p->Fichier }}" alt="image" height="200" width="300">
             </div>
             <ul>
-              <div class="form-group col-lg-6 col-md-6">
-                <br /> <label>{{ $p->Intitule }}</label> <br /> <br /> <label>{{ $p->Prix }}</label>
+              <div class="form-group col-lg-4 col-md-4">
+                <a href="/shop/{{ $p->ID }}"><h4><b>{{ $p->Intitule }}</b></h4></a>
+                <br/><b>{{ $p->Prix }}</b>
               </div>
               <div class="form-group col-lg-12 col-md-5">
                 <p>{{ $p->Legende }}</p>
