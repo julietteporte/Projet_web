@@ -10,7 +10,7 @@ class Manifestation extends Model
     protected $dateFormat = 'U';
     protected $table = "manifestation";
     // protected $fillable = ['ID', 'intitule', 'description', 'datemanifestation', 'lieu', 'prix', 'etatvalidite', 'frequence', 'isactive', ];
-    protected $fillable = ['Intitule', 'Description', 'DateManifestation', 'Lieu', 'Prix', 'Frequence', ];
+    protected $fillable = ['Intitule', 'Description', 'DateManifestation', 'Lieu', 'Prix', 'Frequence', 'Fichier',];
 
     public function créer()
     {
