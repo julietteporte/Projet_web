@@ -27,7 +27,7 @@
             <ul>
               <div class="form-group col-lg-4 col-md-4">
                 <a href="/shop/{{ $p->ID }}"><br/><br/><h4><b>{{ $p->Intitule }}</b></h4></a>
-                <br/><b>{{ $p->Prix }}</b>
+                <label class="text-danger"><h4>{{ $p->Prix }} € TTC</h4></label>
               </div>
               <div class="form-group col-lg-12 col-md-5">
                 <p>{{ $p->Legende }}</p>
