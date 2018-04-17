@@ -17,6 +17,7 @@
 		</div>
 	</div>
 	@foreach ($manifestations as $manifestation)
+		@if($manifestation->EtatValidite === 'Valide')
 	<div class="col-lg-4 col-md-4">
 		<div class="panel panel-default">
 			<div class="panel-body">
@@ -30,6 +31,7 @@
 			</div>
 		</div>
 	</div>
+		@endif
 	@endforeach
 </div>
 <footer class="row"> @include('includes.footer') </footer>

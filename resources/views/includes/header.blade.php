@@ -39,7 +39,7 @@ footer {position: relative; bottom: 0;left: 0; right: 0}
 								<div class="form-group has-feedback">
 									<input type="text" class="form-control" placeholder="Rechercher un produit" name="keywords_product">
 								</div>
-								<button type="submit" class="btn" name"rechercher" ><span class="glyphicon glyphicon-search"></span></button>
+								<button type="submit" class="btn" name="rechercher" ><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 						</div>
 					</form>

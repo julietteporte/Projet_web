@@ -17,7 +17,7 @@ class EventController extends Controller
 
     public function eventDetail($ID)
     {
-        if (is_numeric($ID)) {
+        if (is_numeric($ID) ) {
             $manifestation = Manifestation::find($ID);
             $photos = Photo::all()->where('ID_Manifestation', $ID);
             if (isset($manifestation)) {
@@ -36,8 +36,7 @@ class EventController extends Controller
     {
         $ID = htmlspecialchars($_POST['id_event']);
         $file = $request->file('image');
-        
-        $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
+        $file->move($_ENV['UPLOAD_DIRECTORY3'], $file->getClientOriginalName());
         $photo = new Photo();
         $photo->intitule = $file->getClientOriginalName();
         $photo->description = "todo";

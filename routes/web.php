@@ -44,6 +44,7 @@ Route::get('/eventform', 'EventController@creation')->name('eventform');
 Route::post('/eventform', 'EventController@store')->name('eventform');
 
 Route::get('/submit_idea', 'SubmitIdeaController@index')->name('submit_idea');
+Route::post('/submit_idea', 'SubmitIdeaController@submitSuggestion')->name('submit_idea');
 
 
 Route::get('/confidentiality', function () {
