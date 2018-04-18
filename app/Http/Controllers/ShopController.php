@@ -52,6 +52,7 @@ class ShopController extends Controller
   {
     $categorie = new Categorie();
     $product = new Produit();
+    
     if ($request->has('add_categorie')) {
       $add = $request->all();
       $categorie->fill($add);
@@ -60,6 +61,13 @@ class ShopController extends Controller
     else if ($request->has('add_product')) {
       $add = $request->all();
       $product->fill($add);
+      $file = $request->file('Fichier');
+      if(isset($file)) {
+          $file->move($_ENV['UPLOAD_DIRECTORY'], $file->getClientOriginalName());
+          $product->Fichier = '/uploads/' . $file->getClientOriginalName();
+      } else {
+          $product->Fichier = '/pictures/logo.png';
+      }
       $product->save();
     }
     return redirect('/shop');

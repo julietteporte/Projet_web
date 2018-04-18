@@ -29,14 +29,14 @@
 								<label>{{ $manifestation->Intitule }}</label>
 							</div>
 							<div class="form-group">
-								<img src="/pictures/logo.png" alt="image" height="150"
+								<img src="{{ $manifestation->Fichier }}" alt="image" height="150"
 									width="150">
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
 								<label>Prix : {{ $manifestation->Prix }}</label>
 							</div>
 							<div class="form-group col-lg-6 col-md-6">
-								<label>Date : {{ $manifestation->DateManifestion }}</label>
+								<label>Date : {{ $manifestation->DateManifestation }}</label>
 							</div>
 							<div class="fix-description form-group col-lg-12 col-md-5">
 								<label>Description</label>

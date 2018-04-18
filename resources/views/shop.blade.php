@@ -24,7 +24,8 @@
 							</button>
 						</div>
 						<div class="modal-body">
-														<form method="post">
+							<form method="post" enctype="multipart/form-data">
+					{{ csrf_field() }}
 							<div class="panel-body">
 
 									<div class="form-row col-lg-4 col-md-4">
