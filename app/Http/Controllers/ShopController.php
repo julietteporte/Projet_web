@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Produit;
+use App\Categorie;
 use App\Image;;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests;
@@ -13,14 +14,6 @@ class ShopController extends Controller
 {
   public function index()
   {
-    if(isset($_POST['add_product']))
-    {
-      printf('cc');
-      if (!empty($_POST['Intitule']) && !empty($_POST['Legende']) && !empty($_POST['Description'])) //boolean qui renvoie si la variable est vide, + "!" pour inverser l'action
-      {
-        $this->ShopController->store($request)();
-      }
-    }
     $produit = Produit::all();
     return view('shop')->with('produit',$produit);
   }
@@ -42,7 +35,7 @@ class ShopController extends Controller
     return view('shop')->with('produits', $produits);
   }
 
-  public function store(Request $request)
+  public function storeProd(Request $request)
   {
     $product = new Produit();
     if ($request->has('add_product')) {
@@ -52,9 +45,21 @@ class ShopController extends Controller
     }
     return redirect('/shop');
   }
+
   public function creation()
   {
     return view("shop");
+  }
+
+  public function storeCate(Request $request)
+  {
+    $categorie = new Categorie();
+    if ($request->has('add_categorie')) {
+      $add = $request->all();
+      $categorie->fill($add);
+      $categorie->save();
+    }
+    return redirect('/shop');
   }
 
   public function eventSendPicture(Request $request)

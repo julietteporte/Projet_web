@@ -16,6 +16,7 @@ class CreateCategorieTable extends Migration {
 		{
 			$table->integer('ID', true);
 			$table->string('Intitule', 25);
+			$table->timestamps();
 		});
 	}
 
