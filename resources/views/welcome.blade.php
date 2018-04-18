@@ -4,7 +4,7 @@
   <header class="row">
     @include('includes.header')
   </header>
-  <div class="container">
+  <div class="container" id="main">
     <div class="text-center">
       <h1><b>
       {{ __('home.welcome') }}

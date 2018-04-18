@@ -1,5 +1,5 @@
 <header class="row"> @include('includes.header') </header>
-<div class="row">
+<div class="row"  id="main">
 	<h1 class="text-center">{{__ ('contactUs.title')}}</h1>
 	<div class="row">
 		<div class="col-lg-12 col-md-12 col-md-offset-1">

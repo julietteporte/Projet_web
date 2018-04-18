@@ -2,7 +2,7 @@
 	@include('includes.header')
 </header>
 
-<div class="container">
+<div class="container" id="main">
 	<h2 class="text-center">Termes et conditions générales</h2>
 </div>
 

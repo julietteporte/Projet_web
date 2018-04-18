@@ -1,5 +1,5 @@
 <header class="row"> @include('includes.header') </header>
-<div class="container">
+<div class="container" id="main">
 	<div class="row">
 		<br /> <br />
 		<ul class="nav nav-pills nav-justified">

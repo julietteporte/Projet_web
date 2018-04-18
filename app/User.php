@@ -26,7 +26,7 @@ class User extends Authenticatable
 
     public function typecompte()
     {
-      return $this->hasOne('App\Typecompte', 'ID_TypeCompte');
+      return $this->belongsTo('App\Typecompte', 'ID_TypeCompte');
     }
 
     public function commande()
@@ -63,4 +63,16 @@ class User extends Authenticatable
     {
       return $this->belongsToMany('App\Manifestation', 'participer', 'ID_Compte', 'ID_Manifestation')->withTimestamps();
     }
+
+
+    /**
+     * Check member role
+     *
+     * @return bool
+     */
+    public function isMember()
+    {
+        return $this->typecompte->Type == 'Membre BDE';
+    }
+
 }

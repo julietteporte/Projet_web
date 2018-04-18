@@ -1,6 +1,6 @@
 <header class="row"> @include('includes.header') </header>
 
-<div class="container">
+<div class="container" id="main">
 	<div class="col-lg-12 col-md-12">
 		<br />
 		<h2 class="text-center">{{ $manifestation->Intitule }}</h2>

@@ -11,6 +11,6 @@ class Typecompte extends Model
 
   public function compte()
   {
-    return $this->belongsTo('App\Compte');
+    return $this->hasMany('App\Compte');
   }
 }

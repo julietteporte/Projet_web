@@ -2,14 +2,13 @@
 	@include('includes.header')
 </header>
 <body>
-<div class="container">
+<div class="container" id="main">
 	<br><br><br>
 	@if(Auth::guest() || Auth::user()->ID_TypeCompte != 2 )
 		<h1 class="text-center">{{__ ('administration.joke')}}</h1>
 		<div class="text-center">
 			<img src="../pictures/Gandalf.png"/>
 		</div>
-</div>
 	@else
 		<ul class="nav nav-tabs">
 			<li class="active"><a data-toggle="tab" href="#adminutilisateur">{{__ ('administration.user')}}</a></li>
@@ -113,7 +112,7 @@
 							@foreach ($evt as $e)
 								@if($e->EtatValidite === 'En cours de traitement')
 									<div>
-										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}  &nbsp &nbsp &nbsp</span></a>
+										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}</span></a>  &nbsp &nbsp &nbsp
 										<input class="btn btn-primary"  type="submit" value="{{__ ('administration.isvalidateevent')}}" name="btn_validate_event"/>
 										<input class="btn btn-danger"  type="submit" value="{{__ ('administration.isrefuseevent')}}" name="btn_disable_event"/>
 									</div>
@@ -127,7 +126,7 @@
 							@foreach ($evt as $e)
 								@if($e->IsActive === 0)
 									<div>
-										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}  &nbsp &nbsp &nbsp</span></a>
+										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}</span></a>  &nbsp &nbsp &nbsp
 										<input class="btn btn-danger"  type="submit" value="{{__ ('administration.isdisableevent')}}" name="btn_disable_event"/>
 
 									</div>
@@ -141,7 +140,7 @@
 							@foreach ($evt as $e)
 								@if($e->IsActive === 1 && $e->EtatValidite === 'Valide')
 									<div>
-										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}  &nbsp &nbsp &nbsp</span></a>
+										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}</span></a>  &nbsp &nbsp &nbsp
 										<input class="btn btn-danger"  type="submit" value="{{__ ('administration.isdisableevent')}}" name="btn_disable_event"/>
 									</div>
 								@endif
@@ -202,6 +201,7 @@
 </div>
 	@endif
 <br><br><br><br>
+
 </body>
 <footer class="row">
 	@include('includes.footer')
