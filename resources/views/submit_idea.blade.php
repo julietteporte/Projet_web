@@ -11,26 +11,26 @@
 					{{ csrf_field() }}
 					<div class="form-row col-lg-6 col-md-6">
 						<div class="form-group">
-							<label for="validationServer03">{{__ ('suggestionBox.entitled')}}</label>
+							<label for="Intitule">{{__ ('suggestionBox.entitled')}}</label>
 							<input type="text" name="Intitule" class="form-control is-invalid"
-								id="validationServer03" required>
+								id="Intitule" required>
 						</div>
 						<div class="form-group">
-							<label for="validationServer04">{{__ ('suggestionBox.place')}}</label>
+							<label for="Lieu">{{__ ('suggestionBox.place')}}</label>
 							<input type="text" name="Lieu" class="form-control is-invalid"
-								id="validationServer04" required>
+								id="Lieu" required>
 						</div>
 						<div class="form-group col-lg-7 col-md-7">
-							<label for="validationServer04"><span
+							<label for="DateManifestation"><span
 								class="glyphicon glyphicon-calendar"></span>{{__
 								('suggestionBox.date')}}</label> <input type="date"
-								class="form-control is-invalid" name="DateManifestation" id="validationServer04" required>
+								class="form-control is-invalid" name="DateManifestation" id="DateManifestation" required>
 						</div>
 						<div class="form-group col-lg-5 col-md-5">
-							<label for="validationServer04 ">{{__('suggestionBox.price')}}</label>
+							<label for="Prix ">{{__('suggestionBox.price')}}</label>
 							<input type=number onchange="setTwoNumberDecimal" min="0" max="99" step="0.05"
 								value="0.00" name="Prix" class="form-control is-invalid"
-								id="validationServer04" required>
+								id="Prix" required>
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
 							<label>{{__ ('suggestionBox.description')}}</label>
@@ -45,7 +45,7 @@
 							<div class="form-group">
 								<label for="Frequence" class="col-md-4 control-label">{{__ ('administration.frequency')}}</label>
 								<div class="col-md-6">
-									<input id="frequence" type="text" class="form-control"
+									<input id="Frequence" type="text" class="form-control"
 										name="Frequence" required autofocus>
 								</div>
 							</div>
@@ -54,9 +54,9 @@
 							<button class="btn">{{__ ('suggestionBox.uploadImage')}}</button>
 						</div>
 						<div class="panel-body text-center">
-							<button class="fa fa-share btn" role="button"
-								name="btn_suggestion" type="submit">{{__
-								('suggestionBox.submit')}}</button>
+							<input class="btn btn-primary" role="button"
+								name="btn_suggestion" type="submit" value="{{__
+								('suggestionBox.submit')}}">
 						</div>
 					</div>
 				</form>

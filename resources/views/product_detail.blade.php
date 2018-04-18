@@ -3,10 +3,10 @@
 	<br/> <br/> <br/> <br/>
 	<div class="col-lg-9 col-md-9">
 		<div class="form-row">
-			<div class="form-group col-lg-4 col-md-4 col-lg-offset-1">
+			<div class="form-group col-lg-6 col-md-12">
 				<img src="/uploads/{{ $produit->Fichier }}" alt="image" height="350" width="540">
 			</div>
-			<div class="form-group col-lg-7 col-md-7">
+			<div class="form-group col-lg-6 col-md-12">
 				<b><h2>{{ $produit->Intitule }}</h2></b>
 				<br />
 				<div class="col-lg-6 col-md-6">

@@ -1,3 +1,5 @@
+<link href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
+  
   <hr>
   <div class="social-media" align='center' >
     <div class="panel-body" >

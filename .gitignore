@@ -12,3 +12,4 @@ yarn-error.log
 .env
 .settings/org.eclipse.php.core.prefs
 resources/views/welcome.blade.php
+composer.lock

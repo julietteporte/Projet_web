@@ -26,7 +26,7 @@
 					<div class="panel-body">
 						<div class="form-row text-center">
 							<div class="form-group">
-								<label>{{$manifestation->Intitule }}</label>
+								<label>{{ $manifestation->Intitule }}</label>
 							</div>
 							<div class="form-group">
 								<img src="/pictures/logo.png" alt="image" height="150"
