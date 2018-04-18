@@ -16,7 +16,7 @@ footer {
 }
 
 .footer-background {
-	background: url('../pictures/baniere.jpg');
+	background: url('/pictures/baniere.jpg');
 	min-height: 50px;
 	padding: 20 0 20 0;
 }

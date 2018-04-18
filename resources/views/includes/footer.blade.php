@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <div class="well well" align="center" style="background: url('../pictures/baniere.jpg');">
+    <div class="well well" align="center" style="background: url('/pictures/baniere.jpg');">
       <a href="/confidentiality" style='color:#FFFFFF'>{{__('footer.policy') }}</a>
       <div class="form-row col-lg-8 col-md-8">
         <a href="/legal_notice" style='color:#FFFFFF'>{{__('footer.notice') }}</a>
