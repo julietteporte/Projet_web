@@ -19,7 +19,7 @@ class CreateCompteTable extends Migration {
 			$table->string('email')->unique();
 			$table->string('password');
             $table->enum('genre', array('Homme','Femme'))->nullable();
-			$table->boolean('isActive')->default(0);
+			$table->boolean('isActive')->default(1);
 			$table->integer('ID_TypeCompte')->index('FK_Compte_ID_TypeCompte')->default(1);
             $table->timestamps();
             $table->rememberToken();
