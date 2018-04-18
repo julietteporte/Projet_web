@@ -1,16 +1,28 @@
 <?php
-
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Manifestation extends Model
 {
+
     public $timestamps = false;
+
     protected $dateFormat = 'U';
+
     protected $table = "manifestation";
+
     // protected $fillable = ['ID', 'intitule', 'description', 'datemanifestation', 'lieu', 'prix', 'etatvalidite', 'frequence', 'isactive', ];
-    protected $fillable = ['Intitule', 'Description', 'DateManifestation', 'Lieu', 'Prix', 'Frequence', 'Fichier',];
+    protected $fillable = [
+        'ID',
+        'Intitule',
+        'Description',
+        'DateManifestation',
+        'Lieu',
+        'Prix',
+        'Frequence',
+        'Fichier'
+    ];
 
     public function creer()
     {
@@ -24,11 +36,21 @@ class Manifestation extends Model
 
     public function vote()
     {
-        return $this->belongsTo('App\Vote');
+        return $this->hasMany('App\Vote', 'ID_Manifestation', 'ID', 'vote');
     }
 
     public function photo()
     {
         return $this->hasMany('App\Photo');
+    }
+
+    public function votePour()
+    {
+        return $this->hasMany('App\Vote', 'ID_Manifestation', 'ID', 'vote')->where('ID_TypeVote', 1);
+    }
+
+    public function voteContre()
+    {
+        return $this->hasMany('App\Vote', 'ID_Manifestation', 'ID', 'vote')->where('ID_TypeVote', 2);
     }
 }
