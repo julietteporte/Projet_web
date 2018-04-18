@@ -28,7 +28,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/shop', 'ShopController@index')->name('shop');
-Route::post('/shop', 'ShopController@store')->name('shop');
+Route::post('/shop', 'ShopController@storeProd')->name('shop');
+Route::post('/shop', 'ShopController@storeCate')->name('shop');
 Route::get('/shop/{ID}', 'ShopController@productDetail')->name('product_detail');
 
 
