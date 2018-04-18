@@ -1,18 +1,12 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="/css/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>BDE Cesi Bordeaux</title>
 
-<style>
-header { background: url('../pictures/baniere.jpg');}
-body {margin:0; padding:0; position : absolute}
-footer {position: relative; bottom: 0;left: 0; right: 0}
-</style>
-
-<header>
 	<div class="container-fluid">
 		<div class="navbar-header">
-			<a href='/'><img src="../pictures/logo.png" width="200" height="200"></a>
+			<a href='/'><img src="/pictures/logo.png" width="200" height="200"></a>
 		</div>
 		<div class="container-fluid">
 			<ul class="nav navbar-nav navbar-right" id="navbar_header">
@@ -59,4 +53,3 @@ footer {position: relative; bottom: 0;left: 0; right: 0}
 				</div>
 			</div>
 		</div>
-	</header>
