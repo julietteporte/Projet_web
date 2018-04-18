@@ -35,10 +35,22 @@ class ShopController extends Controller
     return view('shop')->with('produits', $produits);
   }
 
-  public function storeProd(Request $request)
+
+  public function creation()
   {
+    return view("shop");
+  }
+
+  public function store(Request $request)
+  {
+    $categorie = new Categorie();
     $product = new Produit();
-    if ($request->has('add_product')) {
+    if ($request->has('add_categorie')) {
+      $add = $request->all();
+      $categorie->fill($add);
+      $categorie->save();
+    }
+    else if ($request->has('add_product')) {
       $add = $request->all();
       $product->fill($add);
       $product->save();
@@ -46,26 +58,10 @@ class ShopController extends Controller
     return redirect('/shop');
   }
 
-  public function creation()
-  {
-    return view("shop");
-  }
-
-  public function storeCate(Request $request)
-  {
-    $categorie = new Categorie();
-    if ($request->has('add_categorie')) {
-      $add = $request->all();
-      $categorie->fill($add);
-      $categorie->save();
-    }
-    return redirect('/shop');
-  }
-
   public function eventSendPicture(Request $request)
   {
     $file = $request->file('Fichier');
-    $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
+    $file->move($_ENV['UPLOAD_DIRECTORY'], $file->getClientOriginalName());
 
     $produits = Produit::all();
     return view('shop')->with('produits', $produits);
