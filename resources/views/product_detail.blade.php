@@ -1,5 +1,5 @@
 <header class="row"> @include('includes.header') </header>
-<div class="row">
+<div class="row" id="main">
 	<br/> <br/> <br/> <br/>
 	<div class="col-lg-9 col-md-9">
 		<div class="form-row">

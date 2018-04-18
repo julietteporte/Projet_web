@@ -2,17 +2,16 @@ header {
 	background: url('../pictures/baniere.jpg');
 }
 
-body {
-	margin: 0;
-	padding: 0;
-	position: absolute
+#main {
+	min-height: 100%;
+	margin: 0 auto;
+	position: relative;
 }
 
 footer {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	right: 0
+	vertical-align: middle;
+	width: 100%;
+	bottom: 0px;
 }
 
 .footer-background {
