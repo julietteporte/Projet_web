@@ -15,7 +15,14 @@ class ShopController extends Controller
   public function index()
   {
     $produit = Produit::all();
-    return view('shop')->with('produit',$produit);
+    $categorie = Categorie::all();
+    $datas = [
+      'produit' => $produit,
+      'categorie' => $categorie
+    ];
+    return view('shop')->with($datas);
+
+  //  return view('shop')->with('produit',$produit);
   }
 
   public function productDetail($ID)
