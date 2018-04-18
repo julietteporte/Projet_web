@@ -8,7 +8,7 @@ html {
 
 @include('includes.header')
 
-<div class="container">
+<div class="container" id="main">
 
 	@if(isset($_POST["keywords_product"]) && strlen($_POST["keywords_product"]) === 0)
 	<h2>Aucun mot clé renseigné</h2>

@@ -1,5 +1,5 @@
 <header class="row"> @include('includes.header') </header>
-<div class="row">
+<div class="row" id="main">
 	<div class="col-lg-10 col-md-10 col-md-offset-1">
 		<h2 class="text-center">{{__ ('suggestionBox.submitIdea')}}</h2>
 		<div class="panel panel-default">
@@ -61,13 +61,11 @@
 					</div>
 				</form>
 			</div>
-			<ul>
-				@foreach ($produit as $p)
-				<li>{{ $p->Intitule }}</li> @endforeach
-			</ul>
+<!-- 			<ul> -->
+<!-- 				@foreach ($produit as $p) -->
+<!-- 				<li>{{ $p->Intitule }}</li> @endforeach -->
+<!-- 			</ul> -->
 		</div>
 	</div>
 </div>
 <footer class="row"> @include('includes.footer') </footer>
-
-

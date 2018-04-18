@@ -1,5 +1,5 @@
 <header class="row"> @include('includes.header') </header>
-<div class="row">
+<div class="row" id="main">
 	<div class="col-lg-12 col-md-12">
 		<div>
 			<br />

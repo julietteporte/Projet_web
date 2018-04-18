@@ -2,14 +2,13 @@
 	@include('includes.header')
 </header>
 <body>
-<div class="container">
+<div class="container" id="main">
 	<br><br><br>
 	@if(Auth::guest() || Auth::user()->ID_TypeCompte != 2 )
 		<h1 class="text-center">{{__ ('administration.joke')}}</h1>
 		<div class="text-center">
 			<img src="../pictures/Gandalf.png"/>
 		</div>
-</div>
 	@else
 		<ul class="nav nav-tabs">
 			<li class="active"><a data-toggle="tab" href="#adminutilisateur">{{__ ('administration.user')}}</a></li>
@@ -202,6 +201,7 @@
 </div>
 	@endif
 <br><br><br><br>
+
 </body>
 <footer class="row">
 	@include('includes.footer')

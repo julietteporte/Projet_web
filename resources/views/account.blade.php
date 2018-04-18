@@ -9,7 +9,7 @@
 	<header class="row">
 		@include('includes.header')
 	</header>
-	<div class="text-center">
+	<div class="text-center" id="main">
 		<h1>
 			<b> {{__ ('account.myAccount')}} <span
 				class="glyphicon glyphicon-cog" aria-hidden="true"></span>

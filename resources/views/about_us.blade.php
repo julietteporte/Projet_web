@@ -1,5 +1,5 @@
 <header class="row"> @include('includes.header') </header>
-<div class="container">
+<div class="container" id="main">
 	<h2 class="text-center">{{__ ('aboutUs.title')}}</h2>
 	<div class="col-lg-6 col-md-6">
 		<br /> <img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
