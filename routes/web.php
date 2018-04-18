@@ -51,6 +51,7 @@ Route::get('/contact_us', 'ContactUsController@index')->name('contact_us');
 Route::get('/administration', 'AdministrationController@index')->name('administration');
 Route::post('/administration', 'AdministrationController@store')->name('administration');
 //Route::put('/administration', 'AdministrationController@update')->name('administration');
+Route::resource('/administration/users', 'UserController')->middleware('member');;
 
 Route::get('/submit_idea', 'SubmitIdeaController@index')->name('submit_idea')->middleware('auth');
 Route::post('/submit_idea', 'SubmitIdeaController@submitSuggestion')->name('submit_idea')->middleware('auth');
