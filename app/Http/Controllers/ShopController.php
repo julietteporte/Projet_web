@@ -61,7 +61,7 @@ class ShopController extends Controller
   public function eventSendPicture(Request $request)
   {
     $file = $request->file('Fichier');
-    $file->move($_ENV['UPLOAD_DIRECTORY'], $file->getClientOriginalName());
+    $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
 
     $produits = Produit::all();
     return view('shop')->with('produits', $produits);
