@@ -1,11 +1,3 @@
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/style.css" />
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 <header class="row"> @include('includes.header') </header>
 <div class="container">
 	<div class="row">
@@ -28,7 +20,7 @@
 		<div class="row">
 			@foreach ($manifestations as $manifestation)
 			@if($manifestation->EtatValidite === 'En cours de traitement')
-			<div class="col-lg-4 col-md-4">
+			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<div class="form-row text-center">
@@ -45,7 +37,7 @@
 							<div class="form-group col-lg-6 col-md-6">
 								<label>Date : {{ $manifestation->DateManifestion }}</label>
 							</div>
-							<div class="form-group col-lg-12 col-md-5">
+							<div class="fix-description form-group col-lg-12 col-md-5">
 								<label>Description</label>
 								<p>{{ $manifestation->Description }}</p>
 							</div>
