@@ -33,10 +33,12 @@ Route::get('/shop/{ID}', 'ShopController@productDetail')->name('product_detail')
 
 
 Route::get('/suggestion_box', 'SuggestionBoxController@index')->name('suggestion_box');
+Route::get('/suggestion_box/{ID}/{TYPE}', 'SuggestionBoxController@addLike')->name('suggestion_box_add_like')->middleware('auth');
 
 Route::get('/event', 'EventController@index')->name('event');
 Route::get('/event/{ID}', 'EventController@eventDetail')->name('event_detail');
 Route::post('/event/sendPicture', 'EventController@eventSendPicture')->name('event_send_picture');
+Route::get('/event/{ID}/participation', 'EventController@participer')->name('event_participer')->middleware('auth');
 
 Route::get('/cart_recap', 'CartController@index')->name('cart_recap');
 
@@ -48,8 +50,8 @@ Route::get('/contact_us', 'ContactUsController@index')->name('contact_us');
 Route::get('/administration', 'AdministrationController@index')->name('administration');
 Route::post('/administration', 'AdministrationController@store')->name('administration');
 
-Route::get('/submit_idea', 'SubmitIdeaController@index')->name('submit_idea');
-Route::post('/submit_idea', 'SubmitIdeaController@submitSuggestion')->name('submit_idea');
+Route::get('/submit_idea', 'SubmitIdeaController@index')->name('submit_idea')->middleware('auth');
+Route::post('/submit_idea', 'SubmitIdeaController@submitSuggestion')->name('submit_idea')->middleware('auth');
 
 Route::get('/confidentiality', function () {
     return view('confidentiality');
