@@ -17,6 +17,16 @@ footer {
 
 .footer-background {
 	background: url('../pictures/baniere.jpg');
-    min-height: 50px;
-    padding: 20 0 20 0;
+	min-height: 50px;
+	padding: 20 0 20 0;
+}
+
+.fix-cadre-produit {
+	height: 30;
+}
+
+.fix-description {
+	height: 100;
+	overflow: hidden;
+	overflow-wrap: break-word;
 }

@@ -2,8 +2,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/css/style.css" />
+<title>BDE Cesi Bordeaux</title>
 
-<header>
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<a href='/'><img src="/pictures/logo.png" width="200" height="200"></a>
@@ -53,4 +53,3 @@
 				</div>
 			</div>
 		</div>
-	</header>

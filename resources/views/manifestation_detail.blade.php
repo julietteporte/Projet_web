@@ -1,12 +1,10 @@
-  <script type="js/script.js"></script>
-  
 <header class="row"> @include('includes.header') </header>
 
 <div class="container">
 	<div class="col-lg-12 col-md-12">
-			<br />
-			<h2 class="text-center">{{ $manifestation->Intitule }}</h2>
-			<br />
+		<br />
+		<h2 class="text-center">{{ $manifestation->Intitule }}</h2>
+		<br />
 	</div>
 	<div class="col-lg-4 col-md-4 text-center">
 		<img src="/pictures/logo.png" alt="image" height="300" width="300">
@@ -15,28 +13,23 @@
 		<div class="col-lg-7 col-md-7">
 			<p>{{ $manifestation->Description }}</p>
 			<p class="text-right">
-				<label>Date : </label> {{ $manifestation->DateManifestion }}
+				<label>Date : </label> {{ $manifestation->DateManifestation }}
 			</p>
 		</div>
 		<div class="col-lg-5 col-md-5">
-			MAP <img src="/pictures/logo.png" alt="image" height="100"
-				width="100">
+			GOOGLE MAP
 		</div>
 	</div>
 	@if (Auth::check())
-	
 	<div class="form-group col-lg-12 col-md-5">
+		@if (isset($participeFlag)) <span style="color: green;">Je participe !</span>
 		<a href="/event/{{$manifestation->ID }}/participation">
-			<button class="btn btn-default" role="button">
-				@if (isset($participeFlag))
-					<span style="color:red;">Je ne participe pas</span>
-    			@else
-					<span style="color:green;">Je participe !</span>
-   				@endif
-			</button>
-		</a>
+			<button class="btn btn-default" role="button">Annuler</button>
+		</a> @else <span style="color: red;">Je ne participe pas</span> <a
+			href="/event/{{$manifestation->ID }}/participation">
+			<button class="btn btn-default" role="button">Participer</button>
+		</a> @endif
 	</div>
-	
 	<div class="col-lg-12 col-md-12">
 		<form action="/event/sendPicture" method="post"
 			enctype="multipart/form-data">
