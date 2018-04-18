@@ -1,15 +1,11 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Produit;
 use App\Categorie;
 use App\Image;;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests;
-
-
 class ShopController extends Controller
 {
   public function index()
@@ -17,7 +13,6 @@ class ShopController extends Controller
     $produit = Produit::all();
     return view('shop')->with('produit',$produit);
   }
-
   public function productDetail($ID)
   {
     if (is_numeric($ID)) {
@@ -34,7 +29,6 @@ class ShopController extends Controller
     $produits = Produit::all();
     return view('shop')->with('produits', $produits);
   }
-
   public function storeProd(Request $request)
   {
     $product = new Produit();
@@ -44,11 +38,6 @@ class ShopController extends Controller
       $product->save();
     }
     return redirect('/shop');
-  }
-
-  public function creation()
-  {
-    return view("shop");
   }
 
   public function storeCate(Request $request)
@@ -66,11 +55,8 @@ class ShopController extends Controller
   {
     $file = $request->file('Fichier');
     $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
-
     $produits = Produit::all();
     return view('shop')->with('produits', $produits);
   }
-
-
 }
 ?>

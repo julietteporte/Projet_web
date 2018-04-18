@@ -1,5 +1,5 @@
 header {
-	background: url('../pictures/baniere.jpg');
+	background: url('/pictures/baniere.jpg');
 }
 
 body {
@@ -10,6 +10,7 @@ body {
 
 footer {
 	position: relative;
+
 	bottom: 0;
 	left: 0;
 	right: 0

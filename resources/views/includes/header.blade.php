@@ -4,6 +4,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title>BDE Cesi Bordeaux</title>
 
+<style>
+header {
+	background: url('/pictures/baniere.jpg');
+}
+</style>
+
+<header>
 	<div class="container-fluid">
 		<div class="navbar-header">
 			<a href='/'><img src="/pictures/logo.png" width="200" height="200"></a>
@@ -53,3 +60,4 @@
 				</div>
 			</div>
 		</div>
+	</header>
