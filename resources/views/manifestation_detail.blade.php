@@ -7,7 +7,7 @@
 		<br />
 	</div>
 	<div class="col-lg-4 col-md-4 text-center">
-		<img src="/pictures/logo.png" alt="image" height="300" width="300">
+		<img src="{{ $manifestation->Fichier }}" alt="image" height="300" width="300">
 	</div>
 	<div class="col-lg-8 col-md-8">
 		<div class="col-lg-7 col-md-7">
@@ -22,6 +22,7 @@
 	</div>
 	@if (Auth::check())
 	<div class="form-group col-lg-12 col-md-5">
+	<br/>
 		@if (isset($participeFlag)) <span style="color: green;">Je participe !</span>
 		<a href="/event/{{$manifestation->ID }}/participation">
 			<button class="btn btn-default" role="button">Annuler</button>
