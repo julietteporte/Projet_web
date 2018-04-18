@@ -2,7 +2,7 @@
 <div class="row" id="main">
 	<br />
 	<h2 class="text-center">{{__ ('shop.article')}}</h2>
-
+  
 	<div class="col-lg-9 col-md-9">
 
 		@if(Auth::user() && Auth::user()->ID_TypeCompte == 2 )
@@ -57,18 +57,15 @@
 											<input type="file" id="Fichier" name="Fichier">
 										</div>
 									</div>
-							
 							</div>
-
             					<div class="modal-footer">
             						<button type="button" class="btn btn-secondary"
             							data-dismiss="modal">Close</button>
             						<input type="submit" role="button" class="btn btn-primary"
             							name="add_product">{{__('administration.createArticle')}}</input>
-            
-            					</div>
+          </div>
 					</form>
-											</div>
+					</div>
 					</div>
 				</div>
 			</div>
