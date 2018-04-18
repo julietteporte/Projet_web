@@ -26,7 +26,7 @@ footer {position: relative; bottom: 0;left: 0; right: 0}
 					<ul class="dropdown-menu">
 						<li><a href="/account">{{ __('header.account') }}</a></li>
 						@if(Auth::user()->ID_TypeCompte === 2)
-						<li><a href="/administration"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>{{ __('header.admin') }}</a></li>
+						<li><a href="/administration">{{ __('header.admin') }} <span class="glyphicon glyphicon-cog" aria-hidden="true"></span></a></li>
 						@endif
 						<li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> {{ __('header.logout') }} </a><form id="logout-form" action="{{ route('logout') }}"method="POST" style="display: none;">{{ csrf_field() }}</form></li>
 					</ul> @endguest

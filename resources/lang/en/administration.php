@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'user' => 'Users',
     'suggestionsBox' => 'Suggestions box',
     'article' => 'Articles',
     'manifestation' => 'Events',
@@ -20,11 +21,16 @@ return [
     'price' => 'Price',
     'description' => 'Description',
     'uploadImage' => 'Upload an image',
-    'waiting' => 'WAITING',
+    'waiting' => 'WAITING (Suggestion box)',
     'createEvent' => 'Create an event',
     'joke' => 'You shall not pass !',
     'createEvent' => 'Create en event',
     'place' => 'Address',
     'date' => 'Date',
     'frequency' => 'Frequency',
+    'isdisable' => 'Disable account',
+    'isenable' => 'Activate account',
+    'isdisableevent' => 'Disable event',
+    'isvalidateevent' => 'Validate the idea',
+    'isrefuseevent' => 'Reject the idea',
 ];

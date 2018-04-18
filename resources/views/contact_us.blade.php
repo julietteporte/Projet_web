@@ -35,16 +35,13 @@
 					</div>
 					<div class="col-lg-5 col-md-5 ">
 						<div class="form-group">
-							<label>{{__ ('contactUs.subject')}}</label><input type="topic"
-								class="form-control" name="topic"
-								placeholder="{{__ ('contactUs.subject')}}">
+							<label>{{__ ('contactUs.subject')}}</label><input type="topic" class="form-control" name="topic" placeholder="{{__ ('contactUs.subject')}}">
 						</div>
 						<div class="form-group">
 							<label>{{__ ('contactUs.content')}}</label>
 							<textarea class="form-control" rows="15" name="message"></textarea>
 						</div>
-						<button class="fa fa-share btn btn-outline btn-info pull-right"
-							role="button" type="submit">{{__ ('contactUs.submit')}}</button>
+						<button class="btn btn-primary" role="button" type="submit">{{__ ('contactUs.submit')}}</button>
 					</div>
 				</form>
 			</div>
