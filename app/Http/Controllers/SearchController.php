@@ -16,11 +16,11 @@ class SearchController extends Controller
   protected function search()
   {
   //  $requete = htmlspecialchars($_POST['keywords']);
-      
-  //    $produit = Produit::all();
-  //    return view('search')->with('produit',$produit);
-   // $requete = htmlspecialchars($_POST['keywords']);
-    return('search');
+
+      //    $produit = Produit::all();
+      //    return view('search')->with('produit',$produit);
+      // $requete = htmlspecialchars($_POST['keywords']);
+      return('search');
   }
 }
 ?>
