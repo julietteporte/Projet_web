@@ -22,7 +22,7 @@ class CreateProduitTable extends Migration {
 			$table->char('Fichier')->nullable();
 			$table->enum('Disponibilite', array('En stock','En cours de reapprovisionnement','Non disponible'))->default('En stock');
 			$table->boolean('IsActive')->default(1);
-			$table->integer('ID_Categorie')->index('FK_Produit_ID_Categorie');
+			$table->integer('ID_Categorie')->index('FK_Produit_ID_Categorie')->default(1);
 			$table->timestamps();
 		});
 	}

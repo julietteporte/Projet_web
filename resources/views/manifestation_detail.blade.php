@@ -7,7 +7,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script type="js/script.js"></script>
-  
+
 <header class="row"> @include('includes.header') </header>
 
 <div class="container">
@@ -42,10 +42,7 @@
 	</div>
 
 	<div class="col-lg-12 col-md-12">
-		<form action="/event/sendPicture" method="post"
-			enctype="multipart/form-data">
-			{{ csrf_field() }} <input type="hidden" name="id_event"
-				value="{{ $manifestation->ID }}">
+		<form action="/event/sendPicture" method="post" enctype="multipart/form-data">{{ csrf_field() }} <input type="hidden" name="id_event" value="{{ $manifestation->ID }}">
 			<div class="form-group">
 				<label for="exampleInputFile">Ajouter une image</label> <input
 					type="file" id="image" name="image">
@@ -71,4 +68,3 @@
 
 </div>
 <footer class="row"> @include('includes.footer') </footer>
-
