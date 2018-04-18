@@ -81,15 +81,16 @@ class EventController extends Controller
     
     public function eventSendPicture(Request $request)
     {
+        $iduser = Auth::id();
         $ID = htmlspecialchars($_POST['id_event']);
         $file = $request->file('image');
-        $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
+        $file->move($_ENV['UPLOAD_DIRECTORY'], $file->getClientOriginalName());
         $photo = new Photo();
         $photo->intitule = $file->getClientOriginalName();
         $photo->description = "todo";
         $photo->fichier = $file->getClientOriginalName();
         $photo->ID_Manifestation = $ID;
-        $photo->ID_Compte = 1;
+        $photo->ID_Compte = $iduser;
         
         $photo->save();
         

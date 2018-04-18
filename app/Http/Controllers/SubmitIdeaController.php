@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Produit;
 use App\Manifestation;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class SubmitIdeaController extends Controller
 {
@@ -22,12 +23,24 @@ class SubmitIdeaController extends Controller
         $event = new Manifestation();
         $id_Users = (Auth::user()->id);
         if($request->has('btn_suggestion')){
+            
+            
             $add = $request->all();
             $event->ID_Compte = $id_Users;
             $event->fill($add);
+            $event->EtatValidite = 'En cours de traitement';
+            $image = $request->file('image');
+            if(isset($image)) {
+                $file = $request->file('image');
+                $file->move($_ENV['UPLOAD_DIRECTORY'], $file->getClientOriginalName());
+                $event->Fichier = '/uploads/' . $file->getClientOriginalName();
+            } else {
+                $event->Fichier = '/pictures/logo.png';
+            }
             $event->save();
         }
-        return view('event');
+        $manifestations = Manifestation::all();
+        return view('suggestion_box')->with('manifestations', $manifestations);
     }
     
     public function creation(){
