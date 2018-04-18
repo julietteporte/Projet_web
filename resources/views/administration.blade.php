@@ -113,7 +113,7 @@
 							@foreach ($evt as $e)
 								@if($e->EtatValidite === 'En cours de traitement')
 									<div>
-										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}  &nbsp &nbsp &nbsp</span></a>
+										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}</span></a>  &nbsp &nbsp &nbsp
 										<input class="btn btn-primary"  type="submit" value="{{__ ('administration.isvalidateevent')}}" name="btn_validate_event"/>
 										<input class="btn btn-danger"  type="submit" value="{{__ ('administration.isrefuseevent')}}" name="btn_disable_event"/>
 									</div>
@@ -127,7 +127,7 @@
 							@foreach ($evt as $e)
 								@if($e->IsActive === 0)
 									<div>
-										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}  &nbsp &nbsp &nbsp</span></a>
+										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}</span></a>  &nbsp &nbsp &nbsp
 										<input class="btn btn-danger"  type="submit" value="{{__ ('administration.isdisableevent')}}" name="btn_disable_event"/>
 
 									</div>
@@ -141,7 +141,7 @@
 							@foreach ($evt as $e)
 								@if($e->IsActive === 1 && $e->EtatValidite === 'Valide')
 									<div>
-										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}  &nbsp &nbsp &nbsp</span></a>
+										<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp &nbsp &nbsp {{ $e->DateManifestation }}</span></a>  &nbsp &nbsp &nbsp
 										<input class="btn btn-danger"  type="submit" value="{{__ ('administration.isdisableevent')}}" name="btn_disable_event"/>
 									</div>
 								@endif
