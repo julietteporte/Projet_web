@@ -28,9 +28,6 @@ return [
     'place' => 'Address',
     'date' => 'Date',
     'frequency' => 'Frequency',
-    'isdisable' => 'Disable account',
-    'isenable' => 'Activate account',
-    'isdisableevent' => 'Disable event',
-    'isvalidateevent' => 'Validate the idea',
-    'isrefuseevent' => 'Reject the idea',
+    'gestionusers' => 'Users Management',
+    'gestionevents' => 'Events Management',
 ];

@@ -28,9 +28,6 @@ return [
     'place' => 'Adresse',
     'date' => 'Date',
     'frequency' => 'Fréquence',
-    'isdisable' => 'Désactiver le compte',
-    'isenable' => 'Activer le compte',
-    'isdisableevent' => 'Désactiver la manifestation',
-    'isvalidateevent' => 'Valider la proposition',
-    'isrefuseevent' => 'Rejeter la proposition',
+    'gestionusers' => 'Gestion des utilisateurs',
+    'gestionevents' => 'Gestion des évènements',
 ];

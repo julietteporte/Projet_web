@@ -26,7 +26,7 @@ class SubmitIdeaController extends Controller
             $add = $request->all();
             $event->ID_Compte = $id_Users;
             $event->fill($add);
-            $event->EtatValidite = 'En cours de traitement';
+            $event->EtatValidite = '2';
             $image = $request->file('image');
             if(isset($image)) {
                 $file = $request->file('image');
