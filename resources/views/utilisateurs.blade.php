@@ -4,15 +4,12 @@
 
 @section('content')
 	@if(isset($users[1]))
-		<button type="button" id="btn-clck1" class='btn btn-primary' style="width: 30%">Etudiants</button>
-		<br/>
-		<button type="button" id="btn-clck2" class='btn btn-primary' style="width: 30%">Membres BDE</button>
-		<br/>
-		<button type="button" id="btn-clck3" class='btn btn-primary' style="width: 30%">Tuteurs CESI</button>
-		<br/>
-        <button type="button" id="btn-clck4" class='btn btn-primary' style="width: 30%">Voir tout</button>
-        <br/>
-
+	<div class="text-center">
+		<button type="button" id="btn-clck1" class='btn btn-primary' style="width: 20%">Etudiants</button>
+		<button type="button" id="btn-clck2" class='btn btn-primary' style="width: 20%">Membres BDE</button>
+		<button type="button" id="btn-clck3" class='btn btn-primary' style="width: 20%">Tuteurs CESI</button>
+        <button type="button" id="btn-clck4" class='btn btn-primary' style="width: 20%">Voir tout</button>
+</div>
 		<div id="easyPaginate">
 			@include('listeUtilisateurs')
 		</div>
