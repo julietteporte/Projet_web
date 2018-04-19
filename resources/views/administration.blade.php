@@ -197,11 +197,8 @@
 				</div>
 			</div>
 		</div>
-		<br><br>
 </div>
 	@endif
-<br><br><br><br>
-
 </body>
 <footer class="row">
 	@include('includes.footer')
