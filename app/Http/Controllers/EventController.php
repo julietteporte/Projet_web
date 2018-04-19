@@ -84,7 +84,7 @@ class EventController extends Controller
         $iduser = Auth::id();
         $ID = htmlspecialchars($_POST['id_event']);
         $file = $request->file('image');
-        $file->move($_ENV['UPLOAD_DIRECTORY'], $file->getClientOriginalName());
+        $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
         $photo = new Photo();
         $photo->intitule = $file->getClientOriginalName();
         $photo->description = "todo";
