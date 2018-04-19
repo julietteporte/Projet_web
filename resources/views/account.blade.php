@@ -9,7 +9,8 @@
 	<header class="row">
 		@include('includes.header')
 	</header>
-	<div class="text-center" id="main">
+	<div id="main">
+	<div class="text-center">
 		<h1>
 			<b> {{__ ('account.myAccount')}} <span
 				class="glyphicon glyphicon-cog" aria-hidden="true"></span>
@@ -60,6 +61,7 @@
 	</div>
 	<br>
 	<br>
+	</div>
 	<footer class="row">
 		@include('includes.footer')
 	</footer>
