@@ -10,12 +10,12 @@
 		</div>
 		<div class="container-fluid">
 			<ul class="nav navbar-nav navbar-right" id="navbar_header">
-				<li><a href="/language/fr" style='color: #FFFFFF;'>fr</a></li>
-				<li><a href="/language/en" style='color: #FFFFFF;'>en</a></li>
-				<li><a href="/cart_recap" style='color: #FFFFFF;'><span class="glyphicon glyphicon-shopping-cart" title="Panier"></span></a></li>
+				<li><a href="/language/fr" id="li-header">fr</a></li>
+				<li><a href="/language/en" id="li-header">en</a></li>
+				<li><a href="/cart_recap" id="li-header"><span class="glyphicon glyphicon-shopping-cart" title="Panier"></span></a></li>
 				@guest
-				<li><a href="{{ route('login') }}" style='color: #FFFFFF;'>{{__('header.login') }}</a></li>
-				<li><a href="{{ route('register') }}" style='color: #FFFFFF;'>{{__('header.register') }}</a></li> @else
+				<li><a href="{{ route('login') }}" id="li-header">{{__('header.login') }}</a></li>
+				<li><a href="{{ route('register') }}" id="li-header">{{__('header.register') }}</a></li> @else
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" style='color: #FFFFFF;'> <span class="glyphicon glyphicon-user"></span> {{ Auth::user()->prenom}} <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="/account">{{ __('header.account') }}</a></li>
