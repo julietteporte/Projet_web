@@ -21,7 +21,8 @@ class Manifestation extends Model
         'Lieu',
         'Prix',
         'Frequence',
-        'Fichier'
+        'Fichier',
+        'EtatValidite',
     ];
 
     public function creer()

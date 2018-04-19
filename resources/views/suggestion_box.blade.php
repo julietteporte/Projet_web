@@ -20,7 +20,7 @@
 		</div>
 		<div class="row">
 			@foreach ($manifestations as $manifestation)
-			@if($manifestation->EtatValidite === 'En cours de traitement')
+			@if($manifestation->EtatValidite === 2)
 			<div class="col-lg-4 col-md-4 col-sm-12">
 				<div class="panel panel-default">
 					<div class="panel-body">

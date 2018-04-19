@@ -40,19 +40,7 @@
 								@foreach ($user as $usr) @if($usr->ID_TypeCompte === 1)
 								<form method="post">
 									<div>
-										{{ $usr->nom }} &nbsp &nbsp &nbsp {{ $usr->prenom }} &nbsp
-										&nbsp &nbsp {{ $usr->email }} &nbsp &nbsp &nbsp <input
-											class="btn btn-primary" type="submit"
-											value="{{__ ('administration.member')}}" name="btn_member" />
-										<input type="hidden" name="member" id="member" value="1"> <input
-											class="btn btn-primary" type="submit"
-											value="{{__ ('administration.employee')}}"
-											name="btn_employee" /> @if($usr->isActive === 1) <input
-											class="btn btn-danger" type="submit"
-											value="{{__ ('administration.isdisable')}}"
-											name="btn_disable" /> @else <input class="btn btn-danger"
-											type="submit" value="{{__ ('administration.isenable')}}"
-											name="btn_enable" /> @endif
+										{{ $usr->nom }} &nbsp &nbsp &nbsp {{ $usr->prenom }} &nbsp &nbsp &nbsp {{ $usr->email }}
 									</div>
 								</form>
 								@endif @endforeach
@@ -64,18 +52,7 @@
 								@foreach ($user as $usr) @if($usr->ID_TypeCompte === 2)
 								<form method="post">
 									<div>
-										{{ $usr->nom }} &nbsp &nbsp &nbsp {{ $usr->prenom }} &nbsp
-										&nbsp &nbsp {{ $usr->email }} &nbsp &nbsp &nbsp <input
-											class="btn btn-primary" type="submit"
-											value="{{__ ('administration.student')}}" name="btn_student" />
-										<input class="btn btn-primary" type="submit"
-											value="{{__ ('administration.employee')}}"
-											name="btn_employee" /> @if($usr->isActive === 1) <input
-											class="btn btn-danger" type="submit"
-											value="{{__ ('administration.isdisable')}}"
-											name="btn_disable" /> @else <input class="btn btn-danger"
-											type="submit" value="{{__ ('administration.isenable')}}"
-											name="btn_enable" /> @endif
+										{{ $usr->nom }} &nbsp &nbsp &nbsp {{ $usr->prenom }} &nbsp &nbsp &nbsp {{ $usr->email }}
 									</div>
 								</form>
 								@endif @endforeach
@@ -87,17 +64,7 @@
 								@foreach ($user as $usr) @if($usr->ID_TypeCompte === 3)
 								<form method="post">
 									<div>
-										{{ $usr->nom }} &nbsp &nbsp &nbsp {{ $usr->prenom }} &nbsp
-										&nbsp &nbsp {{ $usr->email }} &nbsp &nbsp &nbsp <input
-											class="btn btn-primary" type="submit"
-											value="{{__ ('administration.student')}}" name="btn_student" />
-										<input class="btn btn-primary" type="submit"
-											value="{{__ ('administration.member')}}" name="btn_member" />
-										@if($usr->isActive === 1) <input class="btn btn-danger"
-											type="submit" value="{{__ ('administration.isdisable')}}"
-											name="btn_disable" /> @else <input class="btn btn-danger"
-											type="submit" value="{{__ ('administration.isenable')}}"
-											name="btn_enable" /> @endif
+										{{ $usr->nom }} &nbsp &nbsp &nbsp {{ $usr->prenom }} &nbsp &nbsp &nbsp {{ $usr->email }}
 									</div>
 								</form>
 								@endif @endforeach
@@ -129,16 +96,10 @@
 					<div id="adminattenteidee" class="tab-pane fade in active">
 						<br>
 						<ul>
-							@foreach ($evt as $e) @if($e->EtatValidite === 'En cours de
-							traitement')
+							@foreach ($evt as $e) @if($e->EtatValidite === 2)
 							<div>
 								<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp
-										&nbsp &nbsp {{ $e->DateManifestation }}</span></a> &nbsp &nbsp
-								&nbsp <input class="btn btn-primary" type="submit"
-									value="{{__ ('administration.isvalidateevent')}}"
-									name="btn_validate_event" /> <input class="btn btn-danger"
-									type="submit" value="{{__ ('administration.isrefuseevent')}}"
-									name="btn_disable_event" />
+										&nbsp &nbsp {{ $e->DateManifestation }}</span></a>
 							</div>
 							@endif @endforeach
 						</ul>
@@ -146,13 +107,10 @@
 					<div id="admindesactiveridee" class="tab-pane fade">
 						<br>
 						<ul>
-							@foreach ($evt as $e) @if($e->IsActive === 0)
+							@foreach ($evt as $e) @if($e->EtatValidite === 3)
 							<div>
 								<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp
-										&nbsp &nbsp {{ $e->DateManifestation }}</span></a> &nbsp &nbsp
-								&nbsp <input class="btn btn-danger" type="submit"
-									value="{{__ ('administration.isdisableevent')}}"
-									name="btn_disable_event" />
+										&nbsp &nbsp {{ $e->DateManifestation }}</span></a>
 
 							</div>
 							@endif @endforeach
@@ -162,13 +120,10 @@
 						<br>
 						<ul>
 							@foreach ($evt as $e) @if($e->IsActive === 1 && $e->EtatValidite
-							=== 'Valide')
+							=== 1)
 							<div>
 								<a href="/event/{{ $e->ID }}"><span>{{ $e->Intitule }} &nbsp
-										&nbsp &nbsp {{ $e->DateManifestation }}</span></a> &nbsp &nbsp
-								&nbsp <input class="btn btn-danger" type="submit"
-									value="{{__ ('administration.isdisableevent')}}"
-									name="btn_disable_event" />
+										&nbsp &nbsp {{ $e->DateManifestation }}</span></a>
 							</div>
 							@endif @endforeach
 						</ul>

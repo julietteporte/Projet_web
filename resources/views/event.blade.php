@@ -9,7 +9,7 @@
 		</div>
 	</div>
 	@foreach ($manifestations as $manifestation)
-	@if($manifestation->EtatValidite === 'Valide')
+	@if($manifestation->EtatValidite === 1)
 	<div class="col-lg-4 col-md-4">
 		<div class="panel panel-default">
 			<div class="panel-body">

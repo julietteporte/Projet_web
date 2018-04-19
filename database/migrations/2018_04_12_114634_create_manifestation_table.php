@@ -24,7 +24,7 @@ class CreateManifestationTable extends Migration {
 			$table->text('Frequence', 65535);
 			$table->char('Fichier')->nullable();
 			$table->boolean('IsActive')->default(1);
-			$table->enum('EtatValidite', array('Valide','En cours de traitement','Rejete'))->default('Valide');
+			$table->integer('EtatValidite')->default(1);
 			$table->integer('ID_Compte')->index('FK_Manifestation_ID_Compte');
 		});
 	}
