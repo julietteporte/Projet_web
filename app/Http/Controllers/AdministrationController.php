@@ -5,9 +5,8 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Manifestation;
-use App\Http\Requests;
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class AdministrationController extends Controller
 {
@@ -26,9 +25,18 @@ class AdministrationController extends Controller
             $add = $request->all();
             $event->ID_Compte = $id_Users;
             $event->fill($add);
+            $image = $request->file('image');
+            if(isset($image)) {
+                $file = $request->file('image');
+                $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
+                $event->Fichier = '/uploads/' . $file->getClientOriginalName();
+            } else {
+                $event->Fichier = '/pictures/logo.png';
+            }
             $event->save();
         }
-            return redirect('/event');
+        $manifestations = Manifestation::all();
+        return view('event')->with('manifestations', $manifestations);
     }
 
     public function creation(){

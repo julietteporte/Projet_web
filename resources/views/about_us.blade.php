@@ -2,7 +2,7 @@
 <div class="container" id="main">
 	<h2 class="text-center">{{__ ('aboutUs.title')}}</h2>
 	<div class="col-lg-6 col-md-6">
-		<br /> <img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+		<br /> <img src="/pictures/logo.png"
 			alt="image" height="250" width="500">
 	</div>
 	<div class="col-lg-6 col-md-6">
@@ -19,7 +19,7 @@
 				<div class="panel-body">
 					<div class="form-row">
 						<div class="form-group text-center">
-							<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+							<img src="/pictures/logo.png"
 								alt="image" height="150" width="150">
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
@@ -36,7 +36,7 @@
 				<div class="panel-body">
 					<div class="form-row">
 						<div class="form-group text-center">
-							<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+							<img src="/pictures/logo.png"
 								alt="image" height="150" width="150">
 						</div>
 						<div class="form-group col-lg-12 col-md-5">
@@ -53,7 +53,7 @@
 				<div class="panel-body">
 					<div class="form-row">
 						<div class="form-group text-center">
-							<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+							<img src="/pictures/logo.png"
 								alt="image" height="150" width="150">
 						</div>
 						<div class="form-group col-lg-12 col-md-5">

@@ -1,17 +1,17 @@
 @extends('template')
 
-@section('title', '| Utilisateurs')
+@section('title', '| Manifestations')
 
 @section('content')
-	@if(isset($users[1]))
+	@if(isset($events[1]))
 	<div class="text-center">
-		<button type="button" id="btn-clck1" class='btn btn-primary' style="width: 20%">Etudiants</button>
-		<button type="button" id="btn-clck2" class='btn btn-primary' style="width: 20%">Membres BDE</button>
-		<button type="button" id="btn-clck3" class='btn btn-primary' style="width: 20%">Tuteurs CESI</button>
+		<button type="button" id="btn-clck1" class='btn btn-primary' style="width: 20%">Boite à idée</button>
+		<button type="button" id="btn-clck2" class='btn btn-primary' style="width: 20%">Inactives</button>
+		<button type="button" id="btn-clck3" class='btn btn-primary' style="width: 20%">Actives</button>
         <button type="button" id="btn-clck4" class='btn btn-primary' style="width: 20%">Voir tout</button>
 </div>
 		<div id="easyPaginate">
-			@include('listeUtilisateurs')
+			@include('listeManifestations')
 		</div>
 
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -24,7 +24,7 @@
 			});
 		</script>
 	@else
-		@include('listeUtilisateurs')
+		@include('listeManifestations')
 	@endif
 @endsection
 
@@ -34,7 +34,7 @@
             function filter(e) {
                 $.ajax({
                     type: 'POST',
-                    url: '/administration/users?ajaxid=4',
+                    url: '/administration/events?ajaxid=4',
                     data: {
                         filterParameter: e.data.filterParam
                     },
@@ -55,9 +55,9 @@
                 });
             }
 
-            $("#btn-clck1").bind("click", {filterParam: "students"}, filter);
-            $("#btn-clck2").bind("click", {filterParam: "members"}, filter);
-            $("#btn-clck3").bind("click", {filterParam: "employees"}, filter);
+            $("#btn-clck1").bind("click", {filterParam: "idea"}, filter);
+            $("#btn-clck2").bind("click", {filterParam: "inactive"}, filter);
+            $("#btn-clck3").bind("click", {filterParam: "active"}, filter);
             $("#btn-clck4").bind("click", {filterParam: "all"}, filter);
         });
 	</script>

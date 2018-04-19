@@ -7,7 +7,7 @@
 				<h3 class="panel-title">{{__ ('suggestionBox.postSuggestion')}}</h3>
 			</div>
 			<div class="panel-body">
-				<form method="POST">
+				<form method="POST" enctype="multipart/form-data">
 					{{ csrf_field() }}
 					<div class="form-row col-lg-6 col-md-6">
 						<div class="form-group">
@@ -51,7 +51,8 @@
 							</div>
 						</div>
 						<div class="panel-body text-center">
-							<button class="btn">{{__ ('suggestionBox.uploadImage')}}</button>
+							<input type="file" id="image" name="image">
+							{{__ ('suggestionBox.uploadImage')}}
 						</div>
 						<div class="panel-body text-center">
 							<input class="btn btn-primary" role="button"

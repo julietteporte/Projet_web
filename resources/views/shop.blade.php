@@ -24,7 +24,8 @@
 							</button>
 						</div>
 						<div class="modal-body">
-														<form method="post">
+							<form method="post" enctype="multipart/form-data">
+					{{ csrf_field() }}
 							<div class="panel-body">
 
 									<div class="form-row col-lg-4 col-md-4">
@@ -149,7 +150,7 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="form-group col-lg-3 col-md-3">
-					<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+					<img src="/pictures/logo.png"
 						alt="image" height="60" width="60">
 				</div>
 				<div class="form-group col-lg-6 col-md-6">
@@ -168,7 +169,7 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="form-group col-lg-3 col-md-3">
-					<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+					<img src="/pictures/logo.png"
 						alt="image" height="60" width="60">
 				</div>
 				<div class="form-group col-lg-6 col-md-6">
@@ -187,7 +188,7 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<div class="form-group col-lg-3 col-md-3">
-					<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
+					<img src="/pictures/logo.png"
 						alt="image" height="60" width="60">
 				</div>
 				<div class="form-group col-lg-6 col-md-6">
