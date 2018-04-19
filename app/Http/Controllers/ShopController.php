@@ -63,7 +63,7 @@ class ShopController extends Controller
       $product->fill($add);
       $file = $request->file('Fichier');
       if(isset($file)) {
-          $file->move($_ENV['UPLOAD_DIRECTORY'], $file->getClientOriginalName());
+          $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
           $product->Fichier = '/uploads/' . $file->getClientOriginalName();
       } else {
           $product->Fichier = '/pictures/logo.png';

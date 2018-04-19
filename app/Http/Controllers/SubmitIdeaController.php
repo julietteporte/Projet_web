@@ -23,8 +23,6 @@ class SubmitIdeaController extends Controller
         $event = new Manifestation();
         $id_Users = (Auth::user()->id);
         if($request->has('btn_suggestion')){
-            
-            
             $add = $request->all();
             $event->ID_Compte = $id_Users;
             $event->fill($add);
@@ -32,7 +30,7 @@ class SubmitIdeaController extends Controller
             $image = $request->file('image');
             if(isset($image)) {
                 $file = $request->file('image');
-                $file->move($_ENV['UPLOAD_DIRECTORY'], $file->getClientOriginalName());
+                $file->move($_ENV['UPLOAD_DIRECTORY2'], $file->getClientOriginalName());
                 $event->Fichier = '/uploads/' . $file->getClientOriginalName();
             } else {
                 $event->Fichier = '/pictures/logo.png';
