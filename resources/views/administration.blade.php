@@ -23,6 +23,10 @@
 						{{__ ('administration.userSection')}}
 					</h3>
 				</div>
+				<a href="/administration/users" ><div class="text-right">
+						<button class="btn btn-primary">
+							{{__('administration.gestionusers')}}</button>
+					</div></a>
 				<br>
 				<div class="row col-lg-12">
 					<ul class="nav nav-tabs">
@@ -81,6 +85,10 @@
 						{{__ ('administration.manifestationSection')}}
 					</h3>
 				</div>
+				<a href="/administration/events" ><div class="text-right">
+						<button class="btn btn-primary">
+							{{__('administration.gestionevents')}}</button>
+					</div></a>
 				<br> <br>
 				<ul class="nav nav-tabs">
 					<li class="active"><a data-toggle="tab" href="#adminattenteidee">{{__

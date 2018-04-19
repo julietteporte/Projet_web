@@ -6,7 +6,7 @@
 	@if(isset($events[1]))
 	<div class="text-center">
 		<button type="button" id="btn-clck1" class='btn btn-primary' style="width: 20%">Boite à idée</button>
-		<button type="button" id="btn-clck2" class='btn btn-primary' style="width: 20%">Inactives</button>
+		<button type="button" id="btn-clck2" class='btn btn-primary' style="width: 20%">Desactives</button>
 		<button type="button" id="btn-clck3" class='btn btn-primary' style="width: 20%">Actives</button>
         <button type="button" id="btn-clck4" class='btn btn-primary' style="width: 20%">Voir tout</button>
 </div>

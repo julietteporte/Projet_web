@@ -16,9 +16,14 @@
 				<label>Date : </label> {{ $manifestation->DateManifestation }}
 			</p>
 		</div>
-		<div class="col-lg-5 col-md-5">
-			GOOGLE MAP
-		</div>
+	</div>
+	<div class="col-lg-5 col-md-5">
+		<iframe
+				width="600"
+				height="450"
+				frameborder="0" style="border:0"
+				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCbbg_1AAnafcQQmvA_MDs0nTBgic3sd-Y&q={{ $manifestation->Lieu }}" allowfullscreen>
+		</iframe>
 	</div>
 	@if (Auth::check())
 	<div class="form-group col-lg-12 col-md-5">

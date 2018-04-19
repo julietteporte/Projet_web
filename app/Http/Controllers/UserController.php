@@ -32,8 +32,9 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
+     * @throws \Throwable
      */
     public function store(Request $request)
     {
@@ -109,7 +110,7 @@ class UserController extends Controller
     {
         $users = User::find($id);
         $users->delete();
-        return redirect ('/administration/users')->with('success', 'Suppression réussie');
+        return redirect ('administration/users')->with('success', 'Suppression réussie');
     }
 }
 ?>

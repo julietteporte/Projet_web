@@ -12,7 +12,6 @@ class Manifestation extends Model
 
     protected $table = "manifestation";
 
-    // protected $fillable = ['ID', 'intitule', 'description', 'datemanifestation', 'lieu', 'prix', 'etatvalidite', 'frequence', 'isactive', ];
     protected $fillable = [
         'ID',
         'Intitule',
