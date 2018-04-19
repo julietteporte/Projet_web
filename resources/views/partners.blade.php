@@ -9,28 +9,22 @@
 	</div>
 	<div class="col-lg-7 col-md-7">
 		<div class="form-group col-lg-4 col-md-6 col-sm-12">
-			<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
-				alt="image" height="200" width="200">
+			<img src="/pictures/logo.png" alt="image" height="200" width="200">
 		</div>
 		<div class="form-group col-lg-4 col-md-6 col-sm-12">
-			<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
-				alt="image" height="200" width="200">
+			<img src="/pictures/logo.png" alt="image" height="200" width="200">
 		</div>
 		<div class="form-group col-lg-4 col-md-6 col-sm-12">
-			<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
-				alt="image" height="200" width="200">
+			<img src="/pictures/logo.png" alt="image" height="200" width="200">
 		</div>
 		<div class="form-group col-lg-4 col-md-6 col-sm-12">
-			<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
-				alt="image" height="200" width="200">
+			<img src="/pictures/logo.png" alt="image" height="200" width="200">
 		</div>
 		<div class="form-group col-lg-4 col-md-6 col-sm-12">
-			<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
-				alt="image" height="200" width="200">
+			<img src="/pictures/logo.png" alt="image" height="200" width="200">
 		</div>
 		<div class="form-group col-lg-4 col-md-6 col-sm-12">
-			<img src="file:///D:/workspace_php/siteBDE/image/image.jpg"
-				alt="image" height="200" width="200">
+			<img src="/pictures/logo.png" alt="image" height="200" width="200">
 		</div>
 	</div>
 	<div class="col-lg-5 col-md-5 text-center">
